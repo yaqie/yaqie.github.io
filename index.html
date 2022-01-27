@@ -1,582 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Your description">
-    <meta name="author" content="Your name">
+  <!--====== Required meta tags ======-->
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="description" content="" />
+  <meta name="author" content="ahmad yahya asy-syidqie" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
-	<meta property="og:site_name" content="" /> <!-- website name -->
-	<meta property="og:site" content="" /> <!-- website link -->
-	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+  <!--====== Title ======-->
+  <title>Ahmad Yahya Portfolio</title>
 
-    <!-- Webpage Title -->
-    <title>Nubis Webpage Title</title>
-    
-    <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/fontawesome-all.min.css" rel="stylesheet">
-    <link href="css/swiper.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-	
-	<!-- Favicon  -->
-    <link rel="icon" href="images/favicon.png">
+  <!--====== Favicon Icon ======-->
+  <link rel="shortcut icon" href="../assets/images/favicon.svg" type="image/svg" />
+
+  <!--====== Bootstrap css ======-->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+  <!--====== Line Icons css ======-->
+  <link rel="stylesheet" href="assets/css/lineicons.css" />
+
+  <!--====== Tiny Slider css ======-->
+  <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+
+  <!--====== gLightBox css ======-->
+  <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbarExample">
-    
-    <!-- Navigation -->
-    <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
-        <div class="container">
 
-            <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> 
+<body>
 
-            <!-- Text Logo - Use this if you don't have a graphic logo -->
-            <!-- <a class="navbar-brand logo-text" href="index.html">Nubis</a> -->
+  <!--====== NAVBAR NINE PART START ======-->
 
-            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+  <section class="navbar-area navbar-nine">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <nav class="navbar navbar-expand-lg">
+            <!-- <a class="navbar-brand" href="index.html">
+              <img src="assets/images/white-logo.svg" alt="Logo" />
+            </a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNine"
+              aria-controls="navbarNine" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="toggler-icon"></span>
+              <span class="toggler-icon"></span>
+              <span class="toggler-icon"></span>
             </button>
 
-            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav ms-auto navbar-nav-scroll">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#header">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#details">Details</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#features">Features</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Drop</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                            <li><a class="dropdown-item" href="article.html">Article Details</a></li>
-                            <li><div class="dropdown-divider"></div></li>
-                            <li><a class="dropdown-item" href="terms.html">Terms Conditions</a></li>
-                            <li><div class="dropdown-divider"></div></li>
-                            <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <span class="nav-item">
-                    <a class="btn-solid-sm" href="#contact">Get quote</a>
-                </span>
-            </div> <!-- end of navbar-collapse -->
-        </div> <!-- end of container -->
-    </nav> <!-- end of navbar -->
-    <!-- end of navigation -->
+            <div class="collapse navbar-collapse sub-menu-bar" id="navbarNine">
+              <ul class="navbar-nav me-auto" style="margin-left:0">
+                <li class="nav-item">
+                  <a class="page-scroll active" href="#hero-area">About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="page-scroll" href="#blog">Portfolio</a>
+                </li>
 
-      
-    <!-- Header -->
-    <header id="header" class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-xl-5">
-                    <div class="text-container">
-                        <h1 class="h1-large">Find influencers for your products</h1>
-                        <p class="p-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim, neque ut ultrices sollicitudin</p>
-                        <a class="btn-solid-lg" href="#services">Offered services</a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6 col-xl-7">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/header-image.png" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </header> <!-- end of header -->
-    <!-- end of header -->
+              </ul>
+            </div>
+          </nav>
+          <!-- navbar -->
+        </div>
+      </div>
+      <!-- row -->
+    </div>
+    <!-- container -->
+  </section>
+
+  <!--====== NAVBAR NINE PART ENDS ======-->
 
 
-    <!-- Services -->
-    <div id="services" class="cards-1 bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>Explore our services</h2>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-icon">
-                            <span class="fas fa-headphones-alt"></span>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Analyse your product</h5>
-                            <p>Et blandit nisl libero at arcu. Donec ac lectus sed tellus mollis viverra. Nullam pharetra ante at nunc elementum</p>
-                            <a class="read-more no-line" href="article.html">Learn more <span class="fas fa-long-arrow-alt-right"></span></a>
-                        </div>
-                    </div>
-                    <!-- end of card -->
+  <!--====== SIDEBAR PART ENDS ======-->
 
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-icon red">
-                            <span class="far fa-clipboard"></span>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Evaluate opportunities</h5>
-                            <p>Vulputate nibh feugiat. Morbi pellent diam nec libero lacinia, sed ultrices velit scelerisque. Nunc placerat justo sem</p>
-                            <a class="read-more no-line" href="article.html">Learn more <span class="fas fa-long-arrow-alt-right"></span></a>
-                        </div>
-                    </div>
-                    <!-- end of card -->
+  <!-- Start header Area -->
+  <section id="hero-area" class="header-area header-eight">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-12 col-12">
+          <div class="header-content">
+            <h1>Ahmad Yahya (Yaqie)</h1>
+            <p>
+              <!-- We are a digital agency that helps brands to achieve their
+              business outcomes. We see technology as a tool to create amazing
+              things. -->
+              Hello, my name is yaqie. I am a software developer. I graduated from the University of Amikom Purwokerto majoring in informatics engineering. I started studying world programming since entering college in 2015. I am currently working as one of the software engineering at a well-known company in Jakarta. I have several portfolios :
+            </p>
+            <div class="button">
+              <a href="#blog" class="btn primary-btn">See My Porfolio</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-12">
+          <div class="header-image">
+            <img src="assets/images/photo_2022-01-27_15-36-30.jpg" alt="#" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End header Area -->
 
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-icon green">
-                            <span class="far fa-comments"></span>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Find the influencers</h5>
-                            <p>Ety suscipit metus sollicitudin euqu isq imperdiet nibh nec magna tincidunt, nec pala vehicula neque sodales verum</p>
-                            <a class="read-more no-line" href="article.html">Learn more <span class="fas fa-long-arrow-alt-right"></span></a>
-                        </div>
-                    </div>
-                    <!-- end of card -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of cards-1 -->
-    <!-- end of services -->
-
-
-    <!-- Details 1 -->
-    <div id="details" class="basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-xl-7">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/details-1.png" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6 col-xl-5">
-                    <div class="text-container">
-                        <div class="section-title">WHAT WE DO</div>
-                        <h2>The right influencer can boost your conversion</h2>
-                        <p>Etiam tempus condimentum congue. In sit amet nisi eget massa condimentum lobortis eget ac eros. In hac habitasse platea dictumst. Aenean molestie mauris eget sapien sagittis, a bibendum magna tincidunt</p>
-                        <a class="btn-solid-reg" href="#contact">Get quote</a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-1 -->
-    <!-- end of details 1 -->
-
-
-    <!-- Details 2 -->
-    <div class="basic-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-xl-5">
-                    <div class="text-container">
-                        <div class="section-title">ABOUT US</div>
-                        <h2>We have ten years experience in marketing</h2>
-                        <p>Etiam tempus condimentum congue. In sit amet nisi eget massa condimentum lobortis eget ac eros. In hac habitasse platea dictumst. Aenean molestie mauris eget sapien sagittis, a bibendum magna tincidunt</p>
-                        <a class="btn-outline-reg" href="article.html">Details</a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6 col-xl-7">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/details-2.png" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-2 -->
-    <!-- end of details 2 -->
-
-
-    <!-- Features -->
-    <div id="features" class="accordion-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <h2 class="h2-heading">Online service features</h2>
-                    <p class="p-heading">Suspendisse vitae enim arcu. Aliquam convallis risus a felis blandit, at mollis nisi bibendum. Aliquam nec purus at ex blandit posuere nec a odio. Proin lacinia dolor justo</p>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->   
-            <div class="row">
-                <div class="col-xl-5">
-                    <div class="accordion" id="accordionExample">
-                        
-                        <!-- Accordion Item -->
-                        <div class="accordion-item">
-                            <div class="accordion-icon">
-                                <span class="fas fa-tv"></span>
-                            </div> <!-- end of accordion-icon -->
-                            <div class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Analyse the product and design plan
-                                </button>
-                            </div> <!-- end of accordion-header -->
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">Mauris ornare libero et pharetra hendrerit. Cura elementum lectus quis tellus pretium, vitae lobortis dui sagittis aliquam et enim vel semon anticus</div>
-                            </div> <!-- end of accordion-collapse -->
-                        </div> <!-- end of accordion-item -->
-                        <!-- end of accordion-item -->
-
-                        <!-- Accordion Item -->
-                        <div class="accordion-item">
-                            <div class="accordion-icon blue">
-                                <span class="fas fa-microphone"></span>
-                            </div> <!-- end of accordion-icon -->
-                            <div class="accordion-header" id="headingTwo">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Find the market opportunities
-                                </button>
-                            </div> <!-- end of accordion-header -->
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">Mauris ornare libero et pharetra hendrerit. Cura elementum lectus quis tellus pretium, vitae lobortis dui sagittis aliquam et enim vel semon anticus</div>
-                            </div> <!-- end of accordion-collapse -->
-                        </div> <!-- end of accordion-item -->
-                        <!-- end of accordion-item -->
-
-                        <!-- Accordion Item -->
-                        <div class="accordion-item">
-                            <div class="accordion-icon purple">
-                                <span class="fas fa-video"></span>
-                            </div> <!-- end of accordion-icon -->
-                            <div class="accordion-header" id="headingThree">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Prepare the product launch campaign
-                                </button>
-                            </div> <!-- end of accordion-header -->
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">Mauris ornare libero et pharetra hendrerit. Cura elementum lectus quis tellus pretium, vitae lobortis dui sagittis aliquam et enim vel semon anticus</div>
-                            </div> <!-- end of accordion-collapse -->
-                        </div> <!-- end of accordion-item -->
-                        <!-- end of accordion-item -->
-                        
-                        <!-- Accordion Item -->
-                        <div class="accordion-item">
-                            <div class="accordion-icon orange">
-                                <span class="fas fa-tools"></span>
-                            </div> <!-- end of accordion-icon -->
-                            <div class="accordion-header" id="headingFour">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    Evaluate the campaign and adjust
-                                </button>
-                            </div> <!-- end of accordion-header -->
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">Mauris ornare libero et pharetra hendrerit. Cura elementum lectus quis tellus pretium, vitae lobortis dui sagittis aliquam et enim vel semon anticus</div>
-                            </div> <!-- end of accordion-collapse -->
-                        </div> <!-- end of accordion-item -->
-                        <!-- end of accordion-item -->
-
-                    </div> <!-- end of accordion -->
-                </div> <!-- end of col -->
-                <div class="col-xl-7">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/features-dashboard.png" alt=alternative>
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of accordion-1 -->
-    <!-- end of features -->
+  <!-- Start Latest News Area -->
+  <div id="blog" class="latest-news-area section">
+    <!--======  Start Section Title Five ======-->
+    <div class="section-title-five">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="content">
+              <h2 class="fw-bold">My Portfolio</h2>
+            </div>
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </div>
+    <!--======  End Section Title Five ======-->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-12">
+          <!-- Single News -->
+          <div class="single-news">
+            <div class="image">
+              <a href="javascript:void(0)"><img class="thumb" src="assets/portfolio/iptv/COVER.jpg" alt="Blog" style="height: 300px;width: 1000px !important;background-size: cover !important;object-fit: cover;" /></a>
+              <div class="meta-details">
+                <span>Mobile Apps</span>
+              </div>
+            </div>
+            <div class="content-body">
+              <h4 class="title">
+                <a href="javascript:void(0)"> PIXEL IPTV</a>
+              </h4>
+              <p>
+                Mobile application for hotel guest room visitors. provide entertainment and information about the hotel
+              </p>
+            </div>
+          </div>
+          <!-- End Single News -->
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <!-- Single News -->
+          <div class="single-news">
+            <div class="image">
+              <a href="javascript:void(0)"><img class="thumb" src="https://lh3.googleusercontent.com/pw/AM-JKLW4zDsbQc0gOoikYshI9Fbeehgojav5JgdiWzi3xJAWpXaMw7tqJMaYliz2Ko8bF4WU3Rg2RMu_PoNu5fQ1YPayijVOPVKXatmZ5h8pz_pvguez7XoxaIrkivzbV0gTsn-ptRSNM7Fte6kG-bu3SZvw=s512-no?authuser=0" alt="Blog" style="height: 300px;width: 1000px !important;background-size: cover !important;object-fit: cover;" /></a>
+              <div class="meta-details">
+                <span>Mobile Apps</span>
+              </div>
+            </div>
+            <div class="content-body">
+              <h4 class="title">
+                <a href="javascript:void(0)">
+                  MGS (My Golf Statistic)
+                </a>
+              </h4>
+              <p>
+                This is an application that me and my teams developed using Flutter. This apps are used for entering golf tournaments. Download <a href="https://play.google.com/store/apps/details?id=com.mygolfstatistics.app" target="_blank" rel="noopener noreferrer">PlayStore</a> & <a href="https://apps.apple.com/id/app/my-golf-statistic-mgs/id1596619628?l=id" target="_blank" rel="noopener noreferrer">AppStore</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Single News -->
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <!-- Single News -->
+          <div class="single-news">
+            <div class="image">
+              <a href="javascript:void(0)"><img class="thumb" src="https://play-lh.googleusercontent.com/IvSWLSkUQ6_SswBU1VLAQeACedT7sWawFtR8iz7UAKg0VoPYCWt0yncXG-ySg8xBM2Q=s180-rw" alt="Blog" style="height: 300px;width: 1000px !important;background-size: cover !important;object-fit: cover;" /></a>
+              <div class="meta-details">
+                <span>Mobile Apps</span>
+              </div>
+            </div>
+            <div class="content-body">
+              <h4 class="title">
+                <a href="javascript:void(0)">
+                  Hijrah Nuswantara
+                </a>
+              </h4>
+              <p>
+                The Hijrah Nuswantara application is a donation-raising application that specializes in helping the houses of Allah throughout the country, from the nearest mosque to mosques that are far from your reach. Download <a href="https://play.google.com/store/apps/details?id=sps.hijrah.com" target="_blank" rel="noopener noreferrer">PlayStore</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Single News -->
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <!-- Single News -->
+          <div class="single-news">
+            <div class="image">
+              <a href="javascript:void(0)"><img class="thumb" src="https://play-lh.googleusercontent.com/JTRivv28u0U1X4KneevPWSBLpx4WDFUzU5Snd-AO_HPjuZNYPS6ZnEAOMJ7EH-R1OJw=s180-rw" alt="Blog" style="height: 300px;width: 1000px !important;background-size: cover !important;object-fit: cover;" /></a>
+              <div class="meta-details">
+                <span>Mobile Apps</span>
+              </div>
+            </div>
+            <div class="content-body">
+              <h4 class="title">
+                <a href="javascript:void(0)">
+                  Hijrah Masjid
+                </a>
+              </h4>
+              <p>
+                Hijrah Masjid wants to invite mosque administrators throughout Indonesia to register their mosques as digital mosques which will have a positive effect on the continuity of mosques. Download <a href="https://play.google.com/store/apps/details?id=com.hijrahnuswantara.hijrah_merchants" target="_blank" rel="noopener noreferrer">PlayStore</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Single News -->
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <!-- Single News -->
+          <div class="single-news">
+            <div class="image">
+              <a href="javascript:void(0)"><img class="thumb" src="https://play-lh.googleusercontent.com/fqHoXwbm7drxGOihgQTE9ZNQCCPrpBbSeF2Y2truTTuoDvxa2wR4oAWwXbfiU1TpFPk=s180-rw" alt="Blog" style="height: 300px;width: 1000px !important;background-size: cover !important;object-fit: cover;" /></a>
+              <div class="meta-details">
+                <span>Mobile Apps</span>
+              </div>
+            </div>
+            <div class="content-body">
+              <h4 class="title">
+                <a href="javascript:void(0)">
+                  Bacaaja
+                </a>
+              </h4>
+              <p>
+                Collect news from various well-known Indonesian news portals into one application. Download <a href="https://play.google.com/store/apps/details?id=com.bacaja.app1" target="_blank" rel="noopener noreferrer">PlayStore</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Single News -->
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <!-- Single News -->
+          <div class="single-news">
+            <div class="image">
+              <a href="javascript:void(0)"><img class="thumb" src="https://play-lh.googleusercontent.com/T1ntGsEgkJie21bgfX2HSsgztE_7lpyn0llUVMRuOmeyOtZVQD0CBU3vyOsgvvPFeQ=s180-rw" alt="Blog" style="height: 300px;width: 1000px !important;background-size: cover !important;object-fit: cover;" /></a>
+              <div class="meta-details">
+                <span>Mobile Apps</span>
+              </div>
+            </div>
+            <div class="content-body">
+              <h4 class="title">
+                <a href="javascript:void(0)">
+                  Inacash
+                </a>
+              </h4>
+              <p>
+                One of the first Indonesian e-money applications in Indonesia that uses blockchain technology.
+              </p>
+            </div>
+          </div>
+          <!-- End Single News -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Latest News Area -->
 
 
-    <!-- Testimonials -->
-    <div class="cards-2 bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">Customer testimonials</h2>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
+  <!-- Start Footer Area -->
+  <footer class="footer-area footer-eleven">
+    <!-- Start Footer Top -->
+    <div class="footer-top">
+      <div class="container">
+        <div class="inner-content">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+              <!-- Single Widget -->
+              <div class="footer-widget f-about">
+                <p class="copyright-text">
+                  <span>© 2022 yaqie.github.io.</span>Designed and Developed by
+                  <a href="javascript:void(0)" rel="nofollow"> Ayro UI </a>
+                </p>
+              </div>
+              <!-- End Single Widget -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ End Footer Top -->
+  </footer>
+  <!--/ End Footer Area -->
 
-                    <!-- Card -->
-                    <div class="card">
-                        <img class="quotes" src="images/quotes.svg" alt="alternative">
-                        <div class="card-body">
-                            <p class="testimonial-text">Suspendisse vitae enim arcu. Aliqu convallis risus a felis blandit, at mollis nisi bibendum aliquam noto ricos</p>
-                            <div class="testimonial-author">Roe Smith</div>
-                            <div class="occupation">General Manager, Presentop</div>
-                        </div>
-                        <div class="gradient-floor red-to-blue"></div>
-                    </div>
-                    <!-- end of card -->
+	<!-- <div class="made-in-ayroui mt-4">
+		<a href="https://ayroui.com" target="_blank" rel="nofollow">
+		  <img style="width:220px" src="assets/images/ayroui.svg">
+		</a>
+	</div> -->
 
-                    <!-- Card -->
-                    <div class="card">
-                        <img class="quotes" src="images/quotes.svg" alt="alternative">
-                        <div class="card-body">
-                            <p class="testimonial-text">Suspendisse vitae enim arcu. Aliqu convallis risus a felis blandit, at mollis nisi bibendum aliquam noto ricos</p>
-                            <div class="testimonial-author">Sam Bloom</div>
-                            <div class="occupation">General Manager, Presentop</div>
-                        </div>
-                        <div class="gradient-floor blue-to-purple"></div>
-                    </div>
-                    <!-- end of card -->
+  <a href="#" class="scroll-top btn-hover">
+    <i class="lni lni-chevron-up"></i>
+  </a>
 
-                    <!-- Card -->
-                    <div class="card">
-                        <img class="quotes" src="images/quotes.svg" alt="alternative">
-                        <div class="card-body">
-                            <p class="testimonial-text">Suspendisse vitae enim arcu. Aliqu convallis risus a felis blandit, at mollis nisi bibendum aliquam noto ricos</p>
-                            <div class="testimonial-author">Bill McKenzie</div>
-                            <div class="occupation">General Manager, Presentop</div>
-                        </div>
-                        <div class="gradient-floor purple-to-green"></div>
-                    </div>
-                    <!-- end of card -->
-                    
-                    <!-- Card -->
-                    <div class="card">
-                        <img class="quotes" src="images/quotes.svg" alt="alternative">
-                        <div class="card-body">
-                            <p class="testimonial-text">Suspendisse vitae enim arcu. Aliqu convallis risus a felis blandit, at mollis nisi bibendum aliquam noto ricos</p>
-                            <div class="testimonial-author">Vanya Dropper</div>
-                            <div class="occupation">General Manager, Presentop</div>
-                        </div>
-                        <div class="gradient-floor red-to-blue"></div>
-                    </div>
-                    <!-- end of card -->
+  <!--====== js ======-->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/glightbox.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/tiny-slider.js"></script>
 
-                    <!-- Card -->
-                    <div class="card">
-                        <img class="quotes" src="images/quotes.svg" alt="alternative">
-                        <div class="card-body">
-                            <p class="testimonial-text">Suspendisse vitae enim arcu. Aliqu convallis risus a felis blandit, at mollis nisi bibendum aliquam noto ricos</p>
-                            <div class="testimonial-author">Lefty Brown</div>
-                            <div class="occupation">General Manager, Presentop</div>
-                        </div>
-                        <div class="gradient-floor blue-to-purple"></div>
-                    </div>
-                    <!-- end of card -->
+  <script>
 
-                    <!-- Card -->
-                    <div class="card">
-                        <img class="quotes" src="images/quotes.svg" alt="alternative">
-                        <div class="card-body">
-                            <p class="testimonial-text">Suspendisse vitae enim arcu. Aliqu convallis risus a felis blandit, at mollis nisi bibendum aliquam noto ricos</p>
-                            <div class="testimonial-author">Susane Blake</div>
-                            <div class="occupation">General Manager, Presentop</div>
-                        </div>
-                        <div class="gradient-floor purple-to-green"></div>
-                    </div>
-                    <!-- end of card -->
+    //===== close navbar-collapse when a  clicked
+    let navbarTogglerNine = document.querySelector(
+      ".navbar-nine .navbar-toggler"
+    );
+    navbarTogglerNine.addEventListener("click", function () {
+      navbarTogglerNine.classList.toggle("active");
+    });
 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of cards-2 -->
-    <!-- end of testimonials -->
+    // ==== left sidebar toggle
+    let sidebarLeft = document.querySelector(".sidebar-left");
+    let overlayLeft = document.querySelector(".overlay-left");
+    let sidebarClose = document.querySelector(".sidebar-close .close");
 
+    overlayLeft.addEventListener("click", function () {
+      sidebarLeft.classList.toggle("open");
+      overlayLeft.classList.toggle("open");
+    });
+    sidebarClose.addEventListener("click", function () {
+      sidebarLeft.classList.remove("open");
+      overlayLeft.classList.remove("open");
+    });
 
-    <!-- Customers -->
-    <div class="slider-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h4>Trusted by over <span class="blue">5000</span> customers worldwide</h4>
-                    <hr class="section-divider">
+    // ===== navbar nine sideMenu
+    let sideMenuLeftNine = document.querySelector(".navbar-nine .menu-bar");
 
-                    <!-- Image Slider -->
-                    <div class="slider-container">
-                        <div class="swiper-container image-slider">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img class="img-fluid" src="images/customer-logo-1.png" alt="alternative">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img class="img-fluid" src="images/customer-logo-2.png" alt="alternative">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img class="img-fluid" src="images/customer-logo-3.png" alt="alternative">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img class="img-fluid" src="images/customer-logo-4.png" alt="alternative">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img class="img-fluid" src="images/customer-logo-5.png" alt="alternative">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img class="img-fluid" src="images/customer-logo-6.png" alt="alternative">
-                                </div>
-                            </div> <!-- end of swiper-wrapper -->
-                        </div> <!-- end of swiper container -->
-                    </div> <!-- end of slider-container -->
-                    <!-- end of image slider -->
+    sideMenuLeftNine.addEventListener("click", function () {
+      sidebarLeft.classList.add("open");
+      overlayLeft.classList.add("open");
+    });
 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of slider-1 -->
-    <!-- end of customers -->
+    //========= glightbox
+    GLightbox({
+      'href': 'https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM',
+      'type': 'video',
+      'source': 'youtube', //vimeo, youtube or local
+      'width': 900,
+      'autoplayVideos': true,
+    });
 
-
-    <!-- Invitation -->
-    <div class="basic-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="text-container">
-                        <h2>Find the right influencer for your product</h2>
-                        <p class="p-large">Eu convallis arcu ultrices in. Mauris ornare libero et pharetra hendrerit. Curabitur elementum lectus quis vioc tellus</p>
-                        <a class="btn-solid-lg" href="#contact">Get free quote</a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-3 -->
-    <!-- end of invitation -->
-
-
-    <!-- Contact -->
-    <div id="contact" class="form-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <div class="section-title">GET QUOTE</div>
-                        <h2>Submit the form for quote</h2>
-                        <p>Aliquam et enim vel sem pulvinar suscipit sit amet quis lorem. Sed risus ipsum, egestas sed odio in, pulvinar euismod ipsum. Sed ut enim non nunc fermentum dictum et sit amet erat. Maecenas</p>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="d-flex">
-                                <i class="fas fa-square"></i>
-                                <div class="flex-grow-1">Vel maximus nunc aliquam ut. Donec semper, magna a pulvinar</div>
-                            </li>
-                            <li class="d-flex">
-                                <i class="fas fa-square"></i>
-                                <div class="flex-grow-1">Suscipit sit amet quis lorem. Sed risus ipsum, egestas mare</div>
-                            </li>
-                            <li class="d-flex">
-                                <i class="fas fa-square"></i>
-                                <div class="flex-grow-1">Sem pulvinar suscipit sit amet quis lorem. Sed risus</div>
-                            </li>
-                        </ul>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
-
-                    <!-- Contact Form -->
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" placeholder="Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" placeholder="Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" placeholder="Industry" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" placeholder="Your product" required>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">Submit</button>
-                        </div>
-                    </form>
-                    <!-- end of contact form -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form-1 -->
-    <!-- end of contact -->
-
-
-    <!-- Footer -->
-    <div class="footer bg-gray">
-        <img class="decoration-circles" src="images/decoration-circles.png" alt="alternative">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h4>If you want to find out which are the right influencers for your product marketing campaigns then follow us</h4>
-                    <div class="social-container">
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-facebook-f fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-twitter fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-pinterest-p fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-youtube fa-stack-1x"></i>
-                            </a>
-                        </span>
-                    </div> <!-- end of social-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of footer -->  
-    <!-- end of footer -->
-
-
-    <!-- Copyright -->
-    <div class="copyright bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <ul class="list-unstyled li-space-lg p-small">
-                        <li><a href="article.html">Article Details</a></li>
-                        <li><a href="terms.html">Terms & Conditions</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                    </ul>
-                </div> <!-- end of col -->
-                <div class="col-lg-3 col-md-12 col-sm-12">
-                    <p class="p-small statement">Copyright © <a href="#">Your name</a></p>
-                </div> <!-- end of col -->
-
-                <div class="col-lg-3 col-md-12 col-sm-12">
-                    <p class="p-small statement">Distributed by <a href="https://themewagon.com/" target="_blank">Themewagon</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of copyright --> 
-    <!-- end of copyright -->
-    
-
-    <!-- Back To Top Button -->
-    <button onclick="topFunction()" id="myBtn">
-        <img src="images/up-arrow.png" alt="alternative">
-    </button>
-    <!-- end of back to top button -->
-    	
-    <!-- Scripts -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+  </script>
 </body>
+
 </html>
