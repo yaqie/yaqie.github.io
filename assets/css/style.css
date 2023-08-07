@@ -178,7 +178,7 @@ span {
   height: 25px;
   transition-timing-function: ease-in;
   transition: 0.5s;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .footer-image:hover {
