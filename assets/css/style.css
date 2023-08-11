@@ -42,17 +42,7 @@ span {
   position: relative;
   border-radius: 100%;
   border: 3px solid #fff;
-  animation: move 3s infinite ease alternate;
   margin-bottom: 50px;
-}
-
-@keyframes move {
-  from {
-    transform: translateY(-20px);
-  }
-  to {
-    transform: translateY(0px) scale(1.03);
-  }
 }
 
 .text-justify {
@@ -112,11 +102,6 @@ span {
   transition: 0.5s;
 }
 
-.img-portfolio:hover {
-  /* -webkit-filter: grayscale(0%);
-  filter: grayscale(0%); */
-}
-
 .video {
   /* -webkit-filter: grayscale(100%);
   filter: grayscale(100%); */
@@ -127,10 +112,6 @@ span {
   transition-timing-function: ease-in;
   transition: 0.5s;
   margin-bottom: 30px;
-}
-.video:hover {
-  /* -webkit-filter: grayscale(0%); 
-  filter: grayscale(0%); */
 }
 
 .link {
@@ -181,12 +162,3 @@ span {
   transition: 0.5s;
   margin-left: 10px;
 }
-
-.footer-image:hover {
-  /* -webkit-filter: grayscale(0%);
-  filter: grayscale(0%); */
-}
-
-/* .padding-contact {
-  padding: 0 10px;
-} */
