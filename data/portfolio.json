@@ -1,0 +1,28 @@
+{
+  "data": {
+    "web": [
+      {
+        "thumbnail": "./assets/images/portfolios/portfolio8.webp",
+        "title": "Monstero Atelier",
+        "desc": "Monstero is a convection company. This website was built to make it easier for customers to get information, and invite cooperation with Monstero Convection. Click <a href=\"https://monstero-atelier.co.id/\" target=\"_blank\" >here</a > to check the web."
+      },
+      {
+        "thumbnail": "./assets/images/portfolios/portfolio9.jpg",
+        "title": "Bikersdream",
+        "desc": "Bikersdream is one of the most complete online stores that sells driver equipment. Helps facilitate the community in finding information related to products offered by Bikersdream. Click <a href=\"https://bikersdream.id/\" target=\"_blank\">here</a> to check the web."
+      },
+      {
+        "thumbnail": "./assets/images/portfolios/portfolio10.png",
+        "title": "Himpunan Mahasiswa Islam (HMI) Purwokerto",
+        "desc": "The website of the management organization of the Purwokerto branch of the Islamic student association. Click <a href=\"http://hmiworks.com/\" target=\"_blank\">here</a> to check the web."
+      }
+    ],
+    "mobile": [
+      {
+        "thumbnail": "",
+        "title": "",
+        "desc": ""
+      }
+    ]
+  }
+}
