@@ -21,8 +21,14 @@
       },
       {
         "link": null,
+        "thumbnail": "./assets/images/portfolios/portfolio17.png",
+        "title": "Forum Asisten Amikom Purwokerto",
+        "desc": "Organization website that I developed when I was still in college. I built this website using native PHP. Click <a href=\"https://forumasisten.amikompurwokerto.ac.id/\" target=\"_blank\">here</a> to check the web."
+      },
+      {
+        "link": null,
         "thumbnail": "./assets/images/portfolios/portfolio10.png",
-        "title": "Himpunan Mahasiswa Islam (HMI) Purwokerto",
+        "title": "Himpunan Mahasiswa Islam Purwokerto",
         "desc": "The website of the management organization of the Purwokerto branch of the Islamic student association. Click <a href=\"http://hmiworks.com/\" target=\"_blank\">here</a> to check the web."
       }
     ],
@@ -54,7 +60,7 @@
       {
         "link": "https://photos.app.goo.gl/zzsgwgu6yjigdrVe6",
         "thumbnail": "./assets/images/portfolios/portfolio3.2.png",
-        "title": "MGS (My Golf Statistic)",
+        "title": "My Golf Statistic",
         "desc": "This is an application that me and my teams developed using Flutter. This apps are used for entering golf tournaments."
       },
       {
