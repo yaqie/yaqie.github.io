@@ -34,7 +34,7 @@
     ],
     "mobile": [
       {
-        "link": null,
+        "link": "https://play.google.com/store/apps/details?id=com.bacaaja.app",
         "thumbnail": "./assets/images/portfolios/portfolio12.png",
         "title": "Baca Aja: Agregator Berita",
         "desc": "This is an application that I developed myself using Flutter. This application is a collection of news from various media so that application users can read lots of news in various media in one application."
