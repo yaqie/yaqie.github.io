@@ -168,7 +168,7 @@
       <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
           <button
-            class="nav-link active"
+            class="nav-link active count-all"
             id="all-tab"
             data-bs-toggle="tab"
             data-bs-target="#all"
@@ -183,7 +183,7 @@
         </li>
         <li class="nav-item" role="presentation">
           <button
-            class="nav-link"
+            class="nav-link count-mobile"
             id="mobile-tab"
             data-bs-toggle="tab"
             data-bs-target="#mobile"
@@ -198,7 +198,7 @@
         </li>
         <li class="nav-item" role="presentation">
           <button
-            class="nav-link"
+            class="nav-link count-website"
             id="website-tab"
             data-bs-toggle="tab"
             data-bs-target="#website"
@@ -387,6 +387,11 @@
         type: "GET",
         url: "./data/portfolio.json",
         success: function (response) {
+          $(".count-all").append(
+            `(${response.data.mobile.length + response.data.web.length})`
+          );
+          $(".count-mobile").append(`(${response.data.mobile.length})`);
+          $(".count-website").append(`(${response.data.web.length})`);
           for (let i = 0; i < response.data.mobile.length; i++) {
             const element = response.data.mobile[i];
             $(".mobile-data").append(`
