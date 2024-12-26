@@ -3,90 +3,162 @@
     "web": [
       {
         "link": null,
+        "thumbnail": "./assets/images/portfolios/portfolio24.webp",
+        "title": "SNPI (Seminar Nasional Planter Indonesia) 2024",
+        "desc": "This is an application that I developed with my team using Laravel for a client. SNPI (Seminar Nasional Planter Indonesia) 2024 is a website designed to provide information and registration for the national seminar event. The platform allows users to access event details, register for participation, and stay updated with the latest announcements related to the seminar in a user-friendly manner. Click <a href=\"https://ips-planter.or.id/snpi2024/\" target=\"_blank\" >here</a > to check the web.",
+        "logo": ["./assets/images/skill/1969px-Laravel.svg.png"]
+      },
+      {
+        "link": null,
+        "thumbnail": "./assets/images/portfolios/portfolio22.png",
+        "title": "Hipkasi",
+        "desc": "This is an application that I developed with my team using Laravel for a client. Hipkasi is a company profile website for the Indonesian Palm Oil Professionals Association (Himpunan Profesional Kelapa Sawit Indonesia). The website serves as a platform to showcase the association’s services, provide information about its mission, and connect with professionals in the palm oil industry. Click <a href=\"https://hipkasi.com/\" target=\"_blank\" >here</a > to check the web.",
+        "logo": ["./assets/images/skill/1969px-Laravel.svg.png"]
+      },
+      {
+        "link": null,
+        "thumbnail": "./assets/images/portfolios/portfolio21.png",
+        "title": "Hai Sawit Website",
+        "desc": "This is an application that I developed with my team using Laravel & Flutter for a client. Haisawit is an application that provides comprehensive information about palm oil plantations. The application is designed to help users access data, training, palm oil products, and updates related to palm oil plantations easily and efficiently. Click <a href=\"https://haisawit.co.id/\" target=\"_blank\" >here</a > to check the web.",
+        "logo": [
+          "./assets/images/skill/3030139.webp",
+          "./assets/images/skill/1969px-Laravel.svg.png"
+        ]
+      },
+      {
+        "link": null,
+        "thumbnail": "./assets/images/portfolios/portfolio20.webp",
+        "title": "Elisa Lawyer",
+        "desc": "This is an application that I developed using Laravel for a client. Elisa Lawyer is a legal service application designed to connect users with professional lawyers. The application allows users to easily find legal services, book consultations, and access useful legal resources in a simple and efficient manner. Click <a href=\"https://elisalawyer.com/\" target=\"_blank\" >here</a > to check the web.",
+        "logo": ["./assets/images/skill/1969px-Laravel.svg.png"]
+      },
+      {
+        "link": null,
         "thumbnail": "./assets/images/portfolios/portfolio16.png",
         "title": "Inacash",
-        "desc": "Developing a landing page for the inacash.com website. Inacash is an electronic payment platform that can be used by users to carry out various kinds of transactions. Click <a href=\"https://inacash.com/\" target=\"_blank\" >here</a > to check the web."
+        "desc": "Developing a landing page for the inacash.com website. Inacash is an electronic payment platform that can be used by users to carry out various kinds of transactions. Click <a href=\"https://inacash.com/\" target=\"_blank\" >here</a > to check the web.",
+        "logo": ["./assets/images/skill/1969px-Laravel.svg.png"]
       },
       {
         "link": null,
         "thumbnail": "./assets/images/portfolios/portfolio8.webp",
         "title": "Monstero Atelier",
-        "desc": "Monstero is a convection company. This website was built to make it easier for customers to get information, and invite cooperation with Monstero Convection. Click <a href=\"https://monstero-atelier.co.id/\" target=\"_blank\" >here</a > to check the web."
+        "desc": "Monstero is a convection company. This website was built to make it easier for customers to get information, and invite cooperation with Monstero Convection. Click <a href=\"https://monstero-atelier.co.id/\" target=\"_blank\" >here</a > to check the web.",
+        "logo": [
+          "./assets/images/skill/Bootstrap_logo.svg.png",
+          "./assets/images/skill/JavaScript-logo.png"
+        ]
       },
       {
         "link": null,
         "thumbnail": "./assets/images/portfolios/portfolio9.jpg",
         "title": "Bikersdream",
-        "desc": "Bikersdream is one of the most complete online stores that sells driver equipment. Helps facilitate the community in finding information related to products offered by Bikersdream. Click <a href=\"https://bikersdream.id/\" target=\"_blank\">here</a> to check the web."
+        "desc": "Bikersdream is one of the most complete online stores that sells driver equipment. Helps facilitate the community in finding information related to products offered by Bikersdream. Click <a href=\"https://bikersdream.id/\" target=\"_blank\">here</a> to check the web.",
+        "logo": [
+          "./assets/images/skill/codeigniter-logo-png-transparent.png",
+          "./assets/images/skill/1611079.png"
+        ]
       },
       {
         "link": null,
         "thumbnail": "./assets/images/portfolios/portfolio17.png",
         "title": "Forum Asisten Amikom Purwokerto",
-        "desc": "Organization website that I developed when I was still in college. I built this website using native PHP. Click <a href=\"https://forumasisten.amikompurwokerto.ac.id/\" target=\"_blank\">here</a> to check the web."
+        "desc": "Organization website that I developed when I was still in college. I built this website using native PHP. Click <a href=\"https://forumasisten.amikompurwokerto.ac.id/\" target=\"_blank\">here</a> to check the web.",
+        "logo": ["./assets/images/skill/meta-image.png"]
       },
       {
         "link": null,
         "thumbnail": "./assets/images/portfolios/portfolio10.png",
         "title": "Himpunan Mahasiswa Islam Purwokerto",
-        "desc": "The website of the management organization of the Purwokerto branch of the Islamic student association. Click <a href=\"http://hmiworks.com/\" target=\"_blank\">here</a> to check the web."
+        "desc": "The website of the management organization of the Purwokerto branch of the Islamic student association. Click <a href=\"http://hmiworks.com/\" target=\"_blank\">here</a> to check the web.",
+        "logo": ["./assets/images/skill/meta-image.png"]
       }
     ],
     "mobile": [
       {
+        "link": "https://play.google.com/store/apps/details?id=com.haisawitapp.app",
+        "thumbnail": "./assets/images/portfolios/portfolio19.png",
+        "title": "Hai Sawit Mobile",
+        "desc": "This is an application that I developed with my team using Flutter for a client. Haisawit is an application that provides comprehensive information about palm oil plantations. The application is designed to help users access data, training, palm oil products, and updates related to palm oil plantations easily and efficiently.",
+        "logo": [
+          "./assets/images/skill/3030139.webp",
+          "./assets/images/skill/1969px-Laravel.svg.png"
+        ]
+      },
+      {
+        "link": "https://play.google.com/store/apps/details?id=com.quran.technomonsta",
+        "thumbnail": "./assets/images/portfolios/portfolio18.png",
+        "title": "Makna Quran",
+        "desc": "This is an application that I developed myself using Flutter. Makna Quran is a digital Quran application that provides the full Quran text along with translations and tafsir. The application is designed to help users understand the meaning of Quranic verses easily and conveniently.",
+        "logo": ["./assets/images/skill/3030139.webp"]
+      },
+      {
         "link": "https://play.google.com/store/apps/details?id=com.bacaaja.app",
         "thumbnail": "./assets/images/portfolios/portfolio12.png",
         "title": "Baca Aja: Agregator Berita",
-        "desc": "This is an application that I developed myself using Flutter. This application is a collection of news from various media so that application users can read lots of news in various media in one application."
+        "desc": "This is an application that I developed myself using Flutter. This application is a collection of news from various media so that application users can read lots of news in various media in one application.",
+        "logo": ["./assets/images/skill/3030139.webp"]
       },
       {
         "link": "https://photos.app.goo.gl/GGQNKs9h1K7DUeGZ6",
         "thumbnail": "./assets/images/portfolios/portfolio11.png",
         "title": "FlipFlopTV",
-        "desc": "Develop applications using flutter. Create an online streaming service (FlipFlopTV) application to offer a variety of interesting entertainment shows such as movies, talk shows, documentaries, which can be enjoyed with internet-based devices"
+        "desc": "Develop applications using flutter. Create an online streaming service (FlipFlopTV) application to offer a variety of interesting entertainment shows such as movies, talk shows, documentaries, which can be enjoyed with internet-based devices",
+        "logo": ["./assets/images/skill/3030139.webp"]
       },
       {
         "link": "https://photos.google.com/share/AF1QipO1tYqrIKFBmze5X2hBA3GQMNJVpIfwZ3JIVzSixUgleevGzSzc7LsnTc7DSsJdCg?key=ZUNReHMxNmpxMUlTOVNhU1VlZDRkemhZb2ItSmxB",
         "thumbnail": "./assets/images/portfolios/portfolio1.2.jpg",
         "title": "Wisata Niaga Hotel",
-        "desc": "Wisata Niaga is one of the hotels located in Purwokerto. This application helps people to make hotel reservations easier online. thereby speeding up the customer reservation process."
+        "desc": "Wisata Niaga is one of the hotels located in Purwokerto. This application helps people to make hotel reservations easier online. thereby speeding up the customer reservation process.",
+        "logo": [
+          "./assets/images/skill/3030139.webp",
+          "./assets/images/skill/1611079.png",
+          "./assets/images/skill/nodejs-logo-FBE122E377-seeklogo.com.png"
+        ]
       },
       {
         "link": "https://photos.google.com/share/AF1QipNBwrRMByqa0ddp6lD5cdrdLJiq3iSpM3GPdz2gnKjNpASRw_MKkqqJyWolCLHcww?key=Zm0yWDdCMDQ1a3Zoa0ZLcTZhYTFTMG9xSFlDbWpR",
         "thumbnail": "./assets/images/portfolios/portfolio13.png",
         "title": "PIXEL IPTV",
-        "desc": "Mobile application for hotel guest room visitors. provide entertainment and information about the hotel"
+        "desc": "Mobile application for hotel guest room visitors. provide entertainment and information about the hotel",
+        "logo": ["./assets/images/skill/3030139.webp"]
       },
       {
         "link": "https://photos.app.goo.gl/zzsgwgu6yjigdrVe6",
         "thumbnail": "./assets/images/portfolios/portfolio3.2.png",
         "title": "My Golf Statistic",
-        "desc": "This is an application that me and my teams developed using Flutter. This apps are used for entering golf tournaments."
+        "desc": "This is an application that me and my teams developed using Flutter. This apps are used for entering golf tournaments.",
+        "logo": ["./assets/images/skill/3030139.webp"]
       },
       {
         "link": null,
         "thumbnail": "./assets/images/portfolios/portfolio14.jpg",
         "title": "Hijrah Nuswantara",
-        "desc": "The Hijrah Nuswantara application is a donation-raising application that specializes in helping the houses of Allah throughout the country, from the nearest mosque to mosques that are far from your reach."
+        "desc": "The Hijrah Nuswantara application is a donation-raising application that specializes in helping the houses of Allah throughout the country, from the nearest mosque to mosques that are far from your reach.",
+        "logo": ["./assets/images/skill/3030139.webp"]
       },
       {
         "link": "https://photos.app.goo.gl/XjCtnzHnqev69DH17",
         "thumbnail": "./assets/images/portfolios/portfolio5.2.png",
         "title": "Hijrah Masjid",
-        "desc": "Hijrah Masjid wants to invite mosque administrators throughout Indonesia to register their mosques as digital mosques which will have a positive effect on the continuity of mosques."
+        "desc": "Hijrah Masjid wants to invite mosque administrators throughout Indonesia to register their mosques as digital mosques which will have a positive effect on the continuity of mosques.",
+        "logo": ["./assets/images/skill/3030139.webp"]
       },
 
       {
         "link": null,
         "thumbnail": "./assets/images/portfolios/portfolio15.png",
         "title": "JDIH BAPPENAS",
-        "desc": "Help develop the JDIH BAPPENAS application. This application helps provide information, making it easier for people to get the latest information regarding JDIH BAPPENAS"
+        "desc": "Help develop the JDIH BAPPENAS application. This application helps provide information, making it easier for people to get the latest information regarding JDIH BAPPENAS",
+        "logo": ["./assets/images/skill/3030139.webp"]
       },
       {
         "link": "https://photos.google.com/share/AF1QipPCv7TX5ymxP4coM1STy5jBaXaImG3J6XWmHHIA-YlETm5Njg0Z9iE1yB7qrz-0pA?key=ZXBvcVFlaE9JMVRJUDhBYy11ZV94Z0tBekZIM0pn",
         "thumbnail": "./assets/images/portfolios/portfolio7.2.png",
         "title": "Inacash",
-        "desc": "One of the first Indonesian e-money applications in Indonesia that uses blockchain technology."
+        "desc": "One of the first Indonesian e-money applications in Indonesia that uses blockchain technology.",
+        "logo": ["./assets/images/skill/3030139.webp"]
       }
     ]
   }

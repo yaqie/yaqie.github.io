@@ -432,6 +432,14 @@
                     <h3 ${element.link != null ? 'class="text-white"' : ""}>${
               element.title
             }</h3>
+            <div class="mb-2">
+              ${element.logo
+                .map(
+                  (e) =>
+                    `<img class="small-image" src="${e}" style="margin-left:0px !important;margin-right:10px" />`
+                )
+                .join("")}
+            </div>
                     <p class="text-grey">
                       ${element.desc}
                     </p>
@@ -459,6 +467,15 @@
                     <h3 ${element.link != null ? 'class="text-white"' : ""}>${
               element.title
             }</h3>
+            
+            <div class="mb-2">
+              ${element.logo
+                .map(
+                  (e) =>
+                    `<img class="small-image" src="${e}" style="margin-left:0px !important;margin-right:10px" />`
+                )
+                .join("")}
+            </div>
                     <p class="text-grey">
                       ${element.desc}
                     </p>
