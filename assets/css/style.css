@@ -148,7 +148,7 @@ span {
 
 .bio {
   /* background-color: pink !important; */
-  margin-top: 150px !important;
+  margin-top: 80px !important;
   margin-bottom: 20px !important;
 }
 
@@ -182,4 +182,63 @@ span {
   transition: 0.5s;
   margin-left: 10px;
   object-fit: contain;
+}
+
+.navbar {
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-scrolled {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.floating-buttons {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.back-to-top,
+.whatsapp-float {
+  width: 45px;
+  height: 45px;
+  background: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.back-to-top:hover,
+.whatsapp-float:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-float {
+  background: #25d366;
+}
+
+.whatsapp-float i {
+  font-size: 24px;
+  color: white;
+}
+
+.whatsapp-float img {
+  width: 28px;
+  height: 28px;
+}
+
+.back-to-top .material-symbols-outlined {
+  font-size: 24px;
 }
