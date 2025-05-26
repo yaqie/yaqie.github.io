@@ -254,6 +254,12 @@ span {
   gap: 8px;
 }
 
+/* Hide scroll indicator on mobile devices */
+@media (max-width: 768px) {
+  .scroll-indicator {
+    display: none;
+  }
+}
 .mouse {
   width: 25px;
   height: 40px;
