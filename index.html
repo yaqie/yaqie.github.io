@@ -249,7 +249,28 @@
           role="tabpanel"
           aria-labelledby="all-tab"
         >
-          <div class="row mobile-data website-data"></div>
+          <!-- <div class="row mobile-data website-data"></div>
+          <div class="row mt-4">
+            <div class="col-12">
+              <nav aria-label="Portfolio pagination">
+                <ul
+                  class="pagination justify-content-center"
+                  id="pagination-all"
+                ></ul>
+              </nav>
+            </div>
+          </div> -->
+          <div class="row all-data"></div>
+          <div class="row mt-4">
+            <div class="col-12">
+              <nav aria-label="Portfolio pagination">
+                <ul
+                  class="pagination justify-content-center"
+                  id="pagination-all"
+                ></ul>
+              </nav>
+            </div>
+          </div>
         </div>
         <div
           class="tab-pane fade"
@@ -258,6 +279,16 @@
           aria-labelledby="mobile-tab"
         >
           <div class="row mobile-data"></div>
+          <div class="row mt-4">
+            <div class="col-12">
+              <nav aria-label="Portfolio pagination">
+                <ul
+                  class="pagination justify-content-center"
+                  id="pagination-mobile"
+                ></ul>
+              </nav>
+            </div>
+          </div>
         </div>
         <div
           class="tab-pane fade"
@@ -266,6 +297,16 @@
           aria-labelledby="website-tab"
         >
           <div class="row website-data"></div>
+          <div class="row mt-4">
+            <div class="col-12">
+              <nav aria-label="Portfolio pagination">
+                <ul
+                  class="pagination justify-content-center"
+                  id="pagination-website"
+                ></ul>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -394,11 +435,11 @@
         <div class="col-12 col-md-6 mb-5">
           <center>
             <a
-              href="https://wa.me/6285173309886?text=Halo, saya ingin bekerjasama dengan anda."
+              href="https://wa.me/62895357948031?text=Halo, saya ingin bekerjasama dengan anda."
               target="_blank"
             >
               <img
-                src="https://quickchart.io/qr?text=https://wa.me/6285173309886?text=Halo, saya ingin bekerjasama dengan anda.&centerImageUrl=https://yaqie.github.io/assets/images/ay-circle.png&size=300"
+                src="https://quickchart.io/qr?text=https://wa.me/62895357948031?text=Halo, saya ingin bekerjasama dengan anda.&centerImageUrl=https://yaqie.github.io/assets/images/ay-circle.png&size=300"
               />
             </a>
           </center>
@@ -410,7 +451,7 @@
             <h3 class="padding-contact">
               If you are INTERESTED. We can reach out by contacting me at
               <a
-                href="https://wa.me/6285173309886?text=Halo, saya ingin bekerjasama dengan anda."
+                href="https://wa.me/62895357948031?text=Halo, saya ingin bekerjasama dengan anda."
                 target="_blank"
                 >WhatsApp</a
               >
@@ -442,6 +483,32 @@
         </div>
       </div>
     </footer>
+    <!-- Add before the closing body tag -->
+    <div class="floating-buttons">
+      <a href="#" class="back-to-top" title="Back to Top">
+        <span class="material-symbols-outlined">arrow_upward</span>
+      </a>
+      <a
+        href="https://wa.me/62895357948031?text=Halo, saya ingin bekerjasama dengan anda."
+        class="whatsapp-float"
+        target="_blank"
+        title="Contact on WhatsApp"
+      >
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+    <div class="container d-flex align-items-center">
+      <div class="scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <div class="arrow">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
@@ -457,76 +524,260 @@
           );
           $(".count-mobile").append(`(${response.data.mobile.length})`);
           $(".count-website").append(`(${response.data.web.length})`);
-          for (let i = 0; i < response.data.mobile.length; i++) {
-            const element = response.data.mobile[i];
-            $(".mobile-data").append(`
-              <div class="col-12 col-md-4" data-aos="fade-up" data-aos-duration="1000">
-                ${
-                  element.link != null
-                    ? '<a target="_blank" href="' + element.link + '">'
-                    : ""
-                }
-                  <div class="img-portfolio-section">
-                    <img
-                      class="img-portfolio"
-                      src="${element.thumbnail}"
-                    />
+
+          const itemsPerPage = 6;
+          let currentPage = {
+            all: 1,
+            mobile: 1,
+            website: 1,
+          };
+
+          // Combine and sort all items
+          const allItems = [...response.data.mobile, ...response.data.web].sort(
+            (a, b) => {
+              if (a.isPin && !b.isPin) return -1;
+              if (!a.isPin && b.isPin) return 1;
+              return 0;
+            }
+          );
+
+          // Sort mobile and web data separately
+          const sortedMobile = response.data.mobile.sort((a, b) => {
+            if (a.isPin && !b.isPin) return -1;
+            if (!a.isPin && b.isPin) return 1;
+            return 0;
+          });
+
+          const sortedWeb = response.data.web.sort((a, b) => {
+            if (a.isPin && !b.isPin) return -1;
+            if (!a.isPin && b.isPin) return 1;
+            return 0;
+          });
+
+          // Add this function before renderPagination
+          function renderItem(element) {
+            return `
+            <div class="col-12 col-md-4" data-aos="fade-up" data-aos-duration="1000">
+              ${
+                element.link != null
+                  ? '<a target="_blank" href="' + element.link + '">'
+                  : ""
+              }
+                <div class="img-portfolio-section">
+                  <div class="category-label ${
+                    response.data.mobile.includes(element)
+                      ? "mobile-label"
+                      : "web-label"
+                  }">
+                    ${
+                      response.data.mobile.includes(element)
+                        ? "Mobile"
+                        : "Website"
+                    }
                   </div>
-                  <div>
-                    <h3 ${element.link != null ? 'class="text-white"' : ""}>${
+                  <img class="img-portfolio" src="${element.thumbnail}" />
+                </div>
+                <div>
+                  <h3 ${element.link != null ? 'class="text-white"' : ""}>${
               element.title
             }</h3>
-            <div class="mb-2">
-              ${element.logo
-                .map(
-                  (e) =>
-                    `<img class="small-image" src="${e}" style="margin-left:0px !important;margin-right:10px" />`
-                )
-                .join("")}
-            </div>
-                    <p class="text-grey">
-                      ${element.desc}
-                    </p>
+                  <div class="mb-2">
+                    ${element.logo
+                      .map(
+                        (e) =>
+                          `<img class="small-image" src="${e}" style="margin-left:0px !important;margin-right:10px" />`
+                      )
+                      .join("")}
                   </div>
-                  ${element.link != null ? "</a>" : ""}
-              </div>`);
+                  <p class="text-grey">${element.desc}</p>
+                </div>
+              ${element.link != null ? "</a>" : ""}
+            </div>`;
           }
 
-          for (let i = 0; i < response.data.web.length; i++) {
-            const element = response.data.web[i];
-            $(".website-data").append(`
-            <div class="col-12 col-md-4" data-aos="fade-up" data-aos-duration="1000">
-                ${
-                  element.link != null
-                    ? '<a target="_blank" href="' + element.link + '">'
-                    : ""
-                }
-                  <div class="img-portfolio-section">
-                    <img
-                      class="img-portfolio"
-                      src="${element.thumbnail}"
-                    />
-                  </div>
-                  <div>
-                    <h3 ${element.link != null ? 'class="text-white"' : ""}>${
-              element.title
-            }</h3>
-            
-            <div class="mb-2">
-              ${element.logo
-                .map(
-                  (e) =>
-                    `<img class="small-image" src="${e}" style="margin-left:0px !important;margin-right:10px" />`
-                )
-                .join("")}
-            </div>
-                    <p class="text-grey">
-                      ${element.desc}
-                    </p>
-                  </div>
-                  ${element.link != null ? "</a>" : ""}
-              </div>`);
+          function renderPagination(
+            totalItems,
+            currentPage,
+            containerId,
+            type
+          ) {
+            const totalPages = Math.ceil(totalItems.length / itemsPerPage);
+            const container = $(`#${containerId}`);
+            container.empty();
+
+            if (totalPages <= 1) return;
+
+            // Previous button
+            container.append(`
+    <li class="page-item ${currentPage === 1 ? "disabled" : ""}">
+      <a class="page-link" href="#" data-page="${
+        currentPage - 1
+      }" data-type="${type}">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+  `);
+
+            // First page
+            if (currentPage > 3) {
+              container.append(`
+      <li class="page-item">
+        <a class="page-link" href="#" data-page="1" data-type="${type}">1</a>
+      </li>
+    `);
+              if (currentPage > 4) {
+                container.append(`
+        <li class="page-item disabled">
+          <a class="page-link" href="#">...</a>
+        </li>
+      `);
+              }
+            }
+
+            // Page numbers
+            for (
+              let i = Math.max(1, currentPage - 2);
+              i <= Math.min(totalPages, currentPage + 2);
+              i++
+            ) {
+              container.append(`
+      <li class="page-item ${currentPage === i ? "active" : ""}">
+        <a class="page-link" href="#" data-page="${i}" data-type="${type}">${i}</a>
+      </li>
+    `);
+            }
+
+            // Last page
+            if (currentPage < totalPages - 2) {
+              if (currentPage < totalPages - 3) {
+                container.append(`
+        <li class="page-item disabled">
+          <a class="page-link" href="#">...</a>
+        </li>
+      `);
+              }
+              container.append(`
+      <li class="page-item">
+        <a class="page-link" href="#" data-page="${totalPages}" data-type="${type}">${totalPages}</a>
+      </li>
+    `);
+            }
+
+            // Next button
+            container.append(`
+    <li class="page-item ${currentPage === totalPages ? "disabled" : ""}">
+      <a class="page-link" href="#" data-page="${
+        currentPage + 1
+      }" data-type="${type}">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  `);
           }
+
+          function renderItems(items, container, page) {
+            const start = (page - 1) * itemsPerPage;
+            const paginatedItems = items.slice(start, start + itemsPerPage);
+
+            container.empty();
+            paginatedItems.forEach((element) => {
+              container.append(renderItem(element));
+            });
+          }
+
+          // Initial render
+          // ... existing code ...
+          // Initial render
+          renderItems(allItems, $("#all .all-data"), currentPage.all);
+          renderItems(
+            sortedMobile,
+            $("#mobile .mobile-data"),
+            currentPage.mobile
+          );
+          renderItems(
+            sortedWeb,
+            $("#website .website-data"),
+            currentPage.website
+          );
+          // ... existing code ...
+
+          renderPagination(allItems, currentPage.all, "pagination-all", "all");
+          renderPagination(
+            sortedMobile,
+            currentPage.mobile,
+            "pagination-mobile",
+            "mobile"
+          );
+          renderPagination(
+            sortedWeb,
+            currentPage.website,
+            "pagination-website",
+            "website"
+          );
+
+          // Handle pagination clicks
+          $(".pagination").on("click", ".page-link", function (e) {
+            e.preventDefault();
+            const page = parseInt($(this).data("page"));
+            const type = $(this).data("type");
+
+            // Add scroll to portfolio section
+            document
+              .getElementById("portfolios")
+              .scrollIntoView({ behavior: "smooth" });
+
+            if (isNaN(page) || page < 1) return;
+
+            // ... existing code ...
+            switch (type) {
+              case "all":
+                if (page <= Math.ceil(allItems.length / itemsPerPage)) {
+                  currentPage.all = page;
+                  // Fix the selector to target all-data class
+                  renderItems(allItems, $("#all .all-data"), currentPage.all);
+                  renderPagination(
+                    allItems,
+                    currentPage.all,
+                    "pagination-all",
+                    "all"
+                  );
+                }
+                break;
+              // ... existing code ...
+              case "mobile":
+                if (page <= Math.ceil(sortedMobile.length / itemsPerPage)) {
+                  currentPage.mobile = page;
+                  renderItems(
+                    sortedMobile,
+                    $("#mobile .mobile-data"),
+                    currentPage.mobile
+                  );
+                  renderPagination(
+                    sortedMobile,
+                    currentPage.mobile,
+                    "pagination-mobile",
+                    "mobile"
+                  );
+                }
+                break;
+              case "website":
+                if (page <= Math.ceil(sortedWeb.length / itemsPerPage)) {
+                  currentPage.website = page;
+                  renderItems(
+                    sortedWeb,
+                    $("#website .website-data"),
+                    currentPage.website
+                  );
+                  renderPagination(
+                    sortedWeb,
+                    currentPage.website,
+                    "pagination-website",
+                    "website"
+                  );
+                }
+                break;
+            }
+          });
         },
       });
     </script>
@@ -534,26 +785,29 @@
     <script>
       AOS.init();
     </script>
-    <!-- Add before the closing body tag -->
-    <div class="floating-buttons">
-      <a href="#" class="back-to-top" title="Back to Top">
-        <span class="material-symbols-outlined">arrow_upward</span>
-      </a>
-      <a
-        href="https://wa.me/6285173309886?text=Halo, saya ingin bekerjasama dengan anda."
-        class="whatsapp-float"
-        target="_blank"
-        title="Contact on WhatsApp"
-      >
-        <i class="fab fa-whatsapp"></i>
-      </a>
-    </div>
+
     <script>
       let lastScroll = 0;
       let scrollTimeout;
       const navbar = document.getElementById("navbar");
 
+      let isHoveringNavbar = false;
+
+      // Deteksi saat mouse masuk dan keluar dari navbar
+      navbar.addEventListener("mouseenter", () => {
+        isHoveringNavbar = true;
+      });
+
+      navbar.addEventListener("mouseleave", () => {
+        isHoveringNavbar = false;
+      });
+
       window.addEventListener("scroll", () => {
+        if (isHoveringNavbar) {
+          // Jika sedang hover di navbar, jangan lakukan apapun
+          return;
+        }
+
         const currentScroll = window.pageYOffset;
 
         if (currentScroll > lastScroll && currentScroll > 100) {
@@ -572,20 +826,74 @@
         // Set new timeout
         scrollTimeout = setTimeout(() => {
           navbar.classList.remove("nav-scrolled");
-        }, 1000); // Show navbar after 1 second of no scrolling
+        }, 200);
       });
     </script>
-    <div class="container main d-flex align-items-center py-5 mt-5">
-      <div class="scroll-indicator">
-        <div class="mouse">
-          <div class="wheel"></div>
-        </div>
-        <div class="arrow">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-    </div>
+
+    <script>
+      // Get all sections
+      const sections = document.querySelectorAll("section, .container[id]");
+      const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+      window.addEventListener("scroll", () => {
+        let current = "";
+        const windowHeight = window.innerHeight;
+        const documentHeight = document.documentElement.scrollHeight;
+        const scrollPosition = window.scrollY;
+
+        // Check if we're at the bottom of the page
+        if (scrollPosition + windowHeight >= documentHeight - 50) {
+          current = "contact-section";
+        } else {
+          sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (window.pageYOffset >= sectionTop - 150) {
+              current = section.getAttribute("id");
+            }
+          });
+        }
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active-section");
+          const href = link.getAttribute("href").substring(1);
+          if (href === current) {
+            link.classList.add("active-section");
+          }
+        });
+      });
+    </script>
+
+    <script>
+      const backToTopButton = document.querySelector(".back-to-top");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY === 0) {
+          // Halaman di paling atas
+          backToTopButton.style.display = "none";
+        } else {
+          // Scroll ke bawah
+          backToTopButton.style.display = "flex"; // atau "block", sesuai kebutuhan desain
+        }
+      });
+
+      // Optional: Sembunyikan saat pertama load (jika page langsung dibuka di atas)
+      if (window.scrollY === 0) {
+        backToTopButton.style.display = "none";
+      }
+
+      const handleBackToTopVisibility = () => {
+        if (window.scrollY === 0) {
+          backToTopButton.classList.remove("show");
+        } else {
+          backToTopButton.classList.add("show");
+        }
+      };
+
+      window.addEventListener("scroll", handleBackToTopVisibility);
+
+      // Jalankan sekali saat page load
+      handleBackToTopVisibility();
+    </script>
   </body>
 </html>

@@ -3,6 +3,17 @@
     "web": [
       {
         "link": null,
+        "thumbnail": "./assets/images/portfolios/gemu.png",
+        "title": "Gemu Indonesia",
+        "desc": "This is an application that I developed with my team using Flutter for a client. GEMU is a billing and Point of Sale (POS) application specifically designed for PlayStation rental businesses that also run a café. The app combines rental billing and food & beverage orders into one integrated system, making daily operations more efficient and professional.",
+        "isPin": true,
+        "logo": [
+          "./assets/images/skill/3030139.webp",
+          "./assets/images/skill/1969px-Laravel.svg.png"
+        ]
+      },
+      {
+        "link": null,
         "thumbnail": "./assets/images/portfolios/portfolio24.webp",
         "title": "SNPI (Seminar Nasional Planter Indonesia) 2024",
         "desc": "This is an application that I developed with my team using Laravel for a client. SNPI (Seminar Nasional Planter Indonesia) 2024 is a website designed to provide information and registration for the national seminar event. The platform allows users to access event details, register for participation, and stay updated with the latest announcements related to the seminar in a user-friendly manner. Click <a href=\"https://ips-planter.or.id/snpi2024/\" target=\"_blank\" >here</a > to check the web.",
@@ -36,7 +47,7 @@
         "link": null,
         "thumbnail": "./assets/images/portfolios/portfolio16.png",
         "title": "Inacash",
-        "desc": "Developing a landing page for the inacash.com website. Inacash is an electronic payment platform that can be used by users to carry out various kinds of transactions. Click <a href=\"https://inacash.com/\" target=\"_blank\" >here</a > to check the web.",
+        "desc": "Developing a landing page for the inacash.co.id website. Inacash is an electronic payment platform that can be used by users to carry out various kinds of transactions. Click <a href=\"https://inacash.co.id/\" target=\"_blank\" >here</a > to check the web.",
         "logo": ["./assets/images/skill/1969px-Laravel.svg.png"]
       },
       {
@@ -77,9 +88,10 @@
     "mobile": [
       {
         "link": "https://play.google.com/store/apps/details?id=com.haisawitapp.app",
-        "thumbnail": "./assets/images/portfolios/portfolio19.png",
+        "thumbnail": "./assets/images/portfolios/haisawit.png",
         "title": "Hai Sawit Mobile",
         "desc": "This is an application that I developed with my team using Flutter for a client. Haisawit is an application that provides comprehensive information about palm oil plantations. The application is designed to help users access data, training, palm oil products, and updates related to palm oil plantations easily and efficiently.",
+        "isPin": true,
         "logo": [
           "./assets/images/skill/3030139.webp",
           "./assets/images/skill/1969px-Laravel.svg.png"
@@ -148,9 +160,10 @@
 
       {
         "link": null,
-        "thumbnail": "./assets/images/portfolios/portfolio15.png",
+        "thumbnail": "./assets/images/portfolios/jdihmobile.png",
         "title": "JDIH BAPPENAS",
         "desc": "Help develop the JDIH BAPPENAS application. This application helps provide information, making it easier for people to get the latest information regarding JDIH BAPPENAS",
+        "isPin": true,
         "logo": ["./assets/images/skill/3030139.webp"]
       },
       {
