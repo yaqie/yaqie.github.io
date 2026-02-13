@@ -3,7 +3,7 @@
     "web": [
       {
         "link": null,
-        "thumbnail": "./assets/images/portfolios/gemu.png",
+        "thumbnail": "./assets/images/portfolios/portfolio25.png",
         "title": "Generateinvoice.id",
         "desc": "This is a web application that I developed to help freelancers and small businesses create professional invoices quickly and easily. GenerateInvoice.id allows users to generate invoices with customizable data, automatic calculations, and ready-to-download documents. The platform simplifies the billing process so users can focus more on their work and business growth without dealing with manual invoicing.",
         "isPin": false,
