@@ -4,6 +4,17 @@
       {
         "link": null,
         "thumbnail": "./assets/images/portfolios/gemu.png",
+        "title": "Generateinvoice.id",
+        "desc": "This is a web application that I developed to help freelancers and small businesses create professional invoices quickly and easily. GenerateInvoice.id allows users to generate invoices with customizable data, automatic calculations, and ready-to-download documents. The platform simplifies the billing process so users can focus more on their work and business growth without dealing with manual invoicing.",
+        "isPin": false,
+        "logo": [
+          "./assets/images/skill/1611079.png",
+          "./assets/images/skill/1969px-Laravel.svg.png"
+        ]
+      },
+      {
+        "link": null,
+        "thumbnail": "./assets/images/portfolios/gemu.png",
         "title": "Gemu Indonesia",
         "desc": "This is an application that I developed with my team using Flutter for a client. GEMU is a billing and Point of Sale (POS) application specifically designed for PlayStation rental businesses that also run a café. The app combines rental billing and food & beverage orders into one integrated system, making daily operations more efficient and professional.",
         "isPin": true,
