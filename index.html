@@ -4,896 +4,541 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Ahmad Yahya (Yaqie) - Portfolio</title>
-    <meta
-      name="description"
-      content="Discover how I turn ideas into applications in Mobile app development. Let's start realizing your vision together."
-    />
-    <meta
-      name="keywords"
-      content="Mobile Developer, Mobile Apps Developer, Flutter, Ahmad Yahya, Yaqie"
-    />
+    <meta name="description" content="Discover how I turn ideas into applications in Mobile app development. Let's start realizing your vision together." />
+    <meta name="keywords" content="Mobile Developer, Mobile Apps Developer, Flutter, Ahmad Yahya, Yaqie" />
     <meta name="author" content="Ahmad Yahya Asy-syidqie" />
-
-    <!-- Google / Search Engine Tags -->
     <meta itemprop="name" content="Welcome to Ahmad Yahya's portfolio" />
-    <meta
-      itemprop="description"
-      content="Discover how I turn ideas into applications in Mobile app development. Let's start realizing your vision together."
-    />
-    <meta
-      itemprop="image"
-      content="https://yaqie.github.io/assets/images/profile/profile3.png"
-    />
-    <!-- Facebook Meta Tags -->
+    <meta itemprop="description" content="Discover how I turn ideas into applications in Mobile app development. Let's start realizing your vision together." />
+    <meta itemprop="image" content="https://yaqie.github.io/assets/images/profile/profile3.png" />
     <meta property="og:url" content="https://yaqie.github.io" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Welcome to Ahmad Yahya's portfolio" />
-    <meta
-      property="og:description"
-      content="Discover how I turn ideas into applications in Mobile app development. Let's start realizing your vision together."
-    />
-    <meta
-      property="og:image"
-      content="https://yaqie.github.io/assets/images/profile/profile3.png"
-    />
-    <!-- Twitter Meta Tags -->
+    <meta property="og:description" content="Discover how I turn ideas into applications in Mobile app development. Let's start realizing your vision together." />
+    <meta property="og:image" content="https://yaqie.github.io/assets/images/profile/profile3.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Welcome to Ahmad Yahya's portfolio" />
-    <meta
-      name="twitter:description"
-      content="Discover how I turn ideas into applications in Mobile app development. Let's start realizing your vision together."
-    />
-    <meta
-      name="twitter:image"
-      content="https://yaqie.github.io/assets/images/profile/profile3.png"
-    />
-    <!-- jquery -->
+    <meta name="twitter:description" content="Discover how I turn ideas into applications in Mobile app development. Let's start realizing your vision together." />
+    <meta name="twitter:image" content="https://yaqie.github.io/assets/images/profile/profile3.png" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <!-- AOS CSS and JS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
-    <div class="container">
-      <nav
-        class="navbar fixed-top navbar-expand-lg bg-body-tertiary"
-        id="navbar"
-      >
-        <div class="container container-fluid">
-          <a class="navbar-brand" href="#">My Portfolio</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <a class="nav-link active" aria-current="page" href="#"
-                >About Me</a
-              >
-              <a class="nav-link" href="#portfolios">Portfolio</a>
-              <a class="nav-link" href="#videos">Videos</a>
-              <a class="nav-link" href="#contact-section">Contact</a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-    <div class="container main d-flex align-items-center py-5 mt-5">
-      <div class="row flex-column-reverse flex-md-row bio w-100">
-        <div
-          class="col-12 col-md-6"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <div class="container-center h-100 d-flex align-items-center">
-            <center class="w-100">
-              <h1>Ahmad Yahya (Yaqie)</h1>
-              <p class="description text-grey">
-                Full Stack Developer. Skilled in Mobile App Development using
-                Dart (Flutter) and Web Development using PHP (Native, CI,
-                Laravel), NodeJs and ReactJs. Graduated from Amikom Purwokerto
-                University majoring in informatics engineering. Started studying
-                the world of programming since entered college in 2015.
-                Currently work as a Mobile Apps Dev in a company in Jakarta.
-              </p>
-              <div class="mb-5">
-                <img
-                  class="small-image"
-                  src="./assets/images/skill/Dart_logo.png"
-                />
-                <img
-                  class="small-image"
-                  src="./assets/images/skill/3030139.webp"
-                />
-                <img
-                  class="small-image"
-                  src="./assets/images/skill/meta-image.png"
-                />
-                <img
-                  class="small-image"
-                  src="./assets/images/skill/codeigniter-logo-png-transparent.png"
-                />
-                <img
-                  class="small-image"
-                  src="./assets/images/skill/1969px-Laravel.svg.png"
-                />
-                <img
-                  class="small-image"
-                  src="./assets/images/skill/nodejs-logo-FBE122E377-seeklogo.com.png"
-                />
-                <img
-                  class="small-image"
-                  src="./assets/images/skill/1611079.png"
-                />
-              </div>
 
-              <a
-                href="#portfolios"
-                type="button"
-                class="btn btn-primary me-2 mt-3"
-              >
-                SEE MY PORTFOLIO
-              </a>
-              <a
-                href="#contact-section"
-                class="btn btn-secondary text-white mt-3"
-                >CONTACT ME</a
-              >
-            </center>
-          </div>
-        </div>
-        <div
-          class="col-12 col-md-6"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <div class="h-100 d-flex align-items-center">
-            <center class="w-100">
-              <img
-                src="./assets/images/profile/profile3.png"
-                class="profile-image"
-                alt="profile"
-              />
-            </center>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container pt-5" id="portfolios">
-      <center class="mb-5 grey-background">
-        <h1 class="h1-no-margin">My Portfolio</h1>
-      </center>
-      <!-- <center>
-        <span class="material-symbols-outlined"> devices </span>
-        <span class="material-symbols-outlined"> phone_iphone </span>
-        <span class="material-symbols-outlined"> desktop_windows </span>
-      </center> -->
-      <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link active count-all"
-            id="all-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#all"
-            type="button"
-            role="tab"
-            aria-controls="all"
-            aria-selected="true"
-          >
-            All
-            <!-- <span class="material-symbols-outlined"> devices </span> -->
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link count-mobile"
-            id="mobile-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#mobile"
-            type="button"
-            role="tab"
-            aria-controls="mobile"
-            aria-selected="false"
-          >
-            Mobile Apps
-            <!-- <span class="material-symbols-outlined"> desktop_windows </span> -->
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link count-website"
-            id="website-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#website"
-            type="button"
-            role="tab"
-            aria-controls="website"
-            aria-selected="false"
-          >
-            Website
-            <!-- <span class="material-symbols-outlined"> phone_iphone </span> -->
-          </button>
-        </li>
-      </ul>
-      <div class="tab-content" id="myTabContent">
-        <div
-          class="tab-pane fade show active"
-          id="all"
-          role="tabpanel"
-          aria-labelledby="all-tab"
-        >
-          <!-- <div class="row mobile-data website-data"></div>
-          <div class="row mt-4">
-            <div class="col-12">
-              <nav aria-label="Portfolio pagination">
-                <ul
-                  class="pagination justify-content-center"
-                  id="pagination-all"
-                ></ul>
-              </nav>
-            </div>
-          </div> -->
-          <div class="row all-data"></div>
-          <div class="row mt-4">
-            <div class="col-12">
-              <nav aria-label="Portfolio pagination">
-                <ul
-                  class="pagination justify-content-center"
-                  id="pagination-all"
-                ></ul>
-              </nav>
-            </div>
-          </div>
-        </div>
-        <div
-          class="tab-pane fade"
-          id="mobile"
-          role="tabpanel"
-          aria-labelledby="mobile-tab"
-        >
-          <div class="row mobile-data"></div>
-          <div class="row mt-4">
-            <div class="col-12">
-              <nav aria-label="Portfolio pagination">
-                <ul
-                  class="pagination justify-content-center"
-                  id="pagination-mobile"
-                ></ul>
-              </nav>
-            </div>
-          </div>
-        </div>
-        <div
-          class="tab-pane fade"
-          id="website"
-          role="tabpanel"
-          aria-labelledby="website-tab"
-        >
-          <div class="row website-data"></div>
-          <div class="row mt-4">
-            <div class="col-12">
-              <nav aria-label="Portfolio pagination">
-                <ul
-                  class="pagination justify-content-center"
-                  id="pagination-website"
-                ></ul>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="container pt-5" id="videos">
-      <center class="mb-5 grey-background">
-        <h1 class="h1-no-margin">My Videos</h1>
-      </center>
-      <div class="row">
-        <div
-          class="col-12 col-md-4"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <div class="video-section">
-            <iframe
-              class="video"
-              src="https://www.youtube.com/embed/N-Rk6BsD14U"
-              title="Clothing Store App Development Tutorial Menggunakan Flutter - Flutter Run"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-        <div
-          class="col-12 col-md-4"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <div class="video-section">
-            <iframe
-              class="video"
-              src="https://www.youtube.com/embed/1lY_eH0Sfz0"
-              title="Merubah nama dan icon aplikasi - Flutter Run"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-        <div
-          class="col-12 col-md-4"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <div class="video-section">
-            <iframe
-              class="video"
-              src="https://www.youtube.com/embed/EvGhJoWqnEM"
-              title="Animasi Gambar dengan lottie - Flutter Run"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-        <div
-          class="col-12 col-md-4"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <div class="video-section">
-            <iframe
-              class="video"
-              src="https://www.youtube.com/embed/xjQ5CkAUZTM"
-              title="Implementasi Webview Menggunakan Flutter - Flutter Run"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-        <div
-          class="col-12 col-md-4"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <div class="video-section">
-            <iframe
-              class="video"
-              src="https://www.youtube.com/embed/vTCW-fHd1cA"
-              title="Mudah Membuat Splash Screen - Flutter Run"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-        <div
-          class="col-12 col-md-4"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <div class="video-section">
-            <iframe
-              class="video"
-              src="https://www.youtube.com/embed/tPZueDDLz_k"
-              title="HTTP request menggunakan DIO - Flutter Run"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <center>
-            <a
-              href="https://www.youtube.com/@flutterrun"
-              target="_blank"
-              class="btn btn-secondary text-white"
-              >MY OTHER VIDEOS</a
-            >
-          </center>
-        </div>
-      </div>
-    </div>
-
-    <div class="container pt-5">
-      <center class="mb-5 grey-background">
-        <h1 class="h1-no-margin">Contact</h1>
-      </center>
-      <div class="row" data-aos="fade-up" data-aos-duration="1000">
-        <div class="col-12 col-md-6 mb-5">
-          <center>
-            <a
-              href="https://wa.me/62895357948031?text=Halo, saya ingin bekerjasama dengan anda."
-              target="_blank"
-            >
-              <img
-                src="https://quickchart.io/qr?text=https://wa.me/62895357948031?text=Halo, saya ingin bekerjasama dengan anda.&centerImageUrl=https://yaqie.github.io/assets/images/ay-circle.png&size=300"
-              />
-            </a>
-          </center>
-        </div>
-        <div
-          class="col-12 col-md-6 mb-5 d-flex justify-content-between align-items-center"
-        >
-          <center>
-            <h3 class="padding-contact">
-              If you are INTERESTED. We can reach out by contacting me at
-              <a
-                href="https://wa.me/62895357948031?text=Halo, saya ingin bekerjasama dengan anda."
-                target="_blank"
-                >WhatsApp</a
-              >
-              <br />
-              or you can scan the QR CODE on the left side
-            </h3>
-          </center>
-        </div>
-      </div>
-    </div>
-    <footer class="footer" id="contact-section">
+    <!-- NAVBAR -->
+    <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
       <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <div>© 2023 yaqie.github.io</div>
-          <div>
-            <a href="https://github.com/yaqie" target="_blank"
-              ><img class="small-image" src="./assets/images/footer/1.png"
-            /></a>
-            <a href="https://www.instagram.com/yaqie_/" target="_blank"
-              ><img class="small-image" src="./assets/images/footer/2.png"
-            /></a>
-            <a href="https://www.linkedin.com/in/yaqie/" target="_blank"
-              ><img class="small-image" src="./assets/images/footer/3.png"
-            /></a>
-            <a href="https://www.youtube.com/@FlutterRun" target="_blank"
-              ><img class="small-image" src="./assets/images/footer/4.png"
-            /></a>
+        <a class="navbar-brand" href="#">YAQIE</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active-section" href="#home">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolios">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#videos">Videos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-section">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-6 order-lg-2 text-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+            <div class="profile-wrapper">
+              <img src="./assets/images/profile/profile3.png" class="profile-image" alt="Ahmad Yahya" />
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 order-lg-1 text-center text-lg-start" data-aos="fade-right" data-aos-duration="1000">
+            <span class="greeting-text">Hello, I'm</span>
+            <h1 class="hero-name">Ahmad Yahya</h1>
+            <div class="typing-container">
+              <span class="typing-text" id="typing-text"></span>
+            </div>
+            <p class="description text-center text-lg-start">
+              Full Stack Developer specialized in Mobile App Development (Flutter, Dart) and Web Development (PHP, Laravel, NodeJs, ReactJs). Informatics Engineering graduate from Amikom Purwokerto University.
+            </p>
+            <!-- Skill Icons -->
+            <div class="skill-icons text-center text-lg-start">
+              <div class="skill-icon-wrapper" data-aos="zoom-in" data-aos-delay="100"><img class="small-image" src="./assets/images/skill/Dart_logo.png" /></div>
+              <div class="skill-icon-wrapper" data-aos="zoom-in" data-aos-delay="200"><img class="small-image" src="./assets/images/skill/3030139.webp" /></div>
+              <div class="skill-icon-wrapper" data-aos="zoom-in" data-aos-delay="300"><img class="small-image" src="./assets/images/skill/meta-image.png" /></div>
+              <div class="skill-icon-wrapper" data-aos="zoom-in" data-aos-delay="400"><img class="small-image" src="./assets/images/skill/codeigniter-logo-png-transparent.png" /></div>
+              <div class="skill-icon-wrapper" data-aos="zoom-in" data-aos-delay="500"><img class="small-image" src="./assets/images/skill/1969px-Laravel.svg.png" /></div>
+              <div class="skill-icon-wrapper" data-aos="zoom-in" data-aos-delay="600"><img class="small-image" src="./assets/images/skill/nodejs-logo-FBE122E377-seeklogo.com.png" /></div>
+              <div class="skill-icon-wrapper" data-aos="zoom-in" data-aos-delay="700"><img class="small-image" src="./assets/images/skill/1611079.png" /></div>
+            </div>
+            <div class="d-flex gap-3 justify-content-center justify-content-lg-start flex-wrap">
+              <a href="#portfolios" class="btn btn-primary">SEE MY PORTFOLIO</a>
+              <a href="#contact-section" class="btn btn-secondary">CONTACT ME</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="mouse"><div class="wheel"></div></div>
+        <div class="arrow">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolios">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <p class="section-subtitle">My Works</p>
+          <h1>Portfolio</h1>
+          <div class="header-line"></div>
+        </div>
+
+        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active count-all" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-selected="true">All</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link count-mobile" id="mobile-tab" data-bs-toggle="tab" data-bs-target="#mobile" type="button" role="tab" aria-selected="false">Mobile Apps</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link count-website" id="website-tab" data-bs-toggle="tab" data-bs-target="#website" type="button" role="tab" aria-selected="false">Website</button>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="all" role="tabpanel">
+            <div class="row all-data"></div>
+            <div class="row mt-4">
+              <div class="col-12">
+                <nav aria-label="Portfolio pagination">
+                  <ul class="pagination justify-content-center" id="pagination-all"></ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="mobile" role="tabpanel">
+            <div class="row mobile-data"></div>
+            <div class="row mt-4">
+              <div class="col-12">
+                <nav aria-label="Portfolio pagination">
+                  <ul class="pagination justify-content-center" id="pagination-mobile"></ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="website" role="tabpanel">
+            <div class="row website-data"></div>
+            <div class="row mt-4">
+              <div class="col-12">
+                <nav aria-label="Portfolio pagination">
+                  <ul class="pagination justify-content-center" id="pagination-website"></ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEOS SECTION -->
+    <section id="videos" style="padding: 100px 0;">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <p class="section-subtitle">Tutorials & Demos</p>
+          <h1>My Videos</h1>
+          <div class="header-line"></div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="video-section">
+              <iframe class="video" src="https://www.youtube.com/embed/N-Rk6BsD14U" title="Clothing Store App Development Tutorial Flutter" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="video-section">
+              <iframe class="video" src="https://www.youtube.com/embed/1lY_eH0Sfz0" title="Merubah nama dan icon aplikasi Flutter Run" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="video-section">
+              <iframe class="video" src="https://www.youtube.com/embed/EvGhJoWqnEM" title="Animasi Gambar dengan lottie Flutter Run" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="video-section">
+              <iframe class="video" src="https://www.youtube.com/embed/xjQ5CkAUZTM" title="Implementasi Webview Flutter Run" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="video-section">
+              <iframe class="video" src="https://www.youtube.com/embed/vTCW-fHd1cA" title="Mudah Membuat Splash Screen Flutter Run" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="video-section">
+              <iframe class="video" src="https://www.youtube.com/embed/tPZueDDLz_k" title="HTTP request menggunakan DIO Flutter Run" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a href="https://www.youtube.com/@flutterrun" target="_blank" class="btn btn-secondary">MY OTHER VIDEOS</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact-section" class="contact-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <p class="section-subtitle">Get In Touch</p>
+          <h1>Contact</h1>
+          <div class="header-line"></div>
+        </div>
+        <div class="row justify-content-center" data-aos="fade-up">
+          <div class="col-12 col-lg-10">
+            <div class="contact-card">
+              <div class="row align-items-center">
+                <div class="col-12 col-md-5 mb-4 mb-md-0">
+                  <div class="qr-container">
+                    <a href="https://wa.me/62895357948031?text=Halo, saya ingin bekerjasama dengan anda." target="_blank">
+                      <img src="https://quickchart.io/qr?text=https://wa.me/62895357948031?text=Halo, saya ingin bekerjasama dengan anda.&centerImageUrl=https://yaqie.github.io/assets/images/ay-circle.png&size=280" alt="QR Code WhatsApp" />
+                    </a>
+                  </div>
+                </div>
+                <div class="col-12 col-md-7 text-center text-md-start">
+                  <div class="contact-info">
+                    <h3>If you are <span style="color:#ffaf29;">INTERESTED</span>, we can reach out by contacting me on</h3>
+                    <a href="https://wa.me/62895357948031?text=Halo, saya ingin bekerjasama dengan anda." target="_blank" class="contact-wa-link">
+                      <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                    <p class="text-grey mt-3" style="font-size:0.9rem;">Or scan the QR code to start a conversation</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-copyright">&copy; 2023 yaqie.github.io</div>
+          <div class="footer-social">
+            <a href="https://github.com/yaqie" target="_blank" title="GitHub"><img class="small-image" src="./assets/images/footer/1.png" /></a>
+            <a href="https://www.instagram.com/yaqie_/" target="_blank" title="Instagram"><img class="small-image" src="./assets/images/footer/2.png" /></a>
+            <a href="https://www.linkedin.com/in/yaqie/" target="_blank" title="LinkedIn"><img class="small-image" src="./assets/images/footer/3.png" /></a>
+            <a href="https://www.youtube.com/@FlutterRun" target="_blank" title="YouTube"><img class="small-image" src="./assets/images/footer/4.png" /></a>
           </div>
         </div>
       </div>
     </footer>
-    <!-- Add before the closing body tag -->
+
+    <!-- FLOATING BUTTONS -->
     <div class="floating-buttons">
       <a href="#" class="back-to-top" title="Back to Top">
         <span class="material-symbols-outlined">arrow_upward</span>
       </a>
-      <a
-        href="https://wa.me/62895357948031?text=Halo, saya ingin bekerjasama dengan anda."
-        class="whatsapp-float"
-        target="_blank"
-        title="Contact on WhatsApp"
-      >
+      <a href="https://wa.me/62895357948031?text=Halo, saya ingin bekerjasama dengan anda." class="whatsapp-float" target="_blank" title="Contact on WhatsApp">
         <i class="fab fa-whatsapp"></i>
       </a>
     </div>
-    <div class="">
-      <div class="scroll-indicator">
-        <div class="mouse">
-          <div class="wheel"></div>
-        </div>
-        <div class="arrow">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-    </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      $.ajax({
-        type: "GET",
-        url: "./data/portfolio.json",
-        success: function (response) {
-          $(".count-all").append(
-            `(${response.data.mobile.length + response.data.web.length})`
-          );
-          $(".count-mobile").append(`(${response.data.mobile.length})`);
-          $(".count-website").append(`(${response.data.web.length})`);
 
-          const itemsPerPage = 6;
-          let currentPage = {
-            all: 1,
-            mobile: 1,
-            website: 1,
-          };
-
-          // Combine and sort all items
-          const allItems = [...response.data.mobile, ...response.data.web].sort(
-            (a, b) => {
-              if (a.isPin && !b.isPin) return -1;
-              if (!a.isPin && b.isPin) return 1;
-              return 0;
-            }
-          );
-
-          // Sort mobile and web data separately
-          const sortedMobile = response.data.mobile.sort((a, b) => {
-            if (a.isPin && !b.isPin) return -1;
-            if (!a.isPin && b.isPin) return 1;
-            return 0;
-          });
-
-          const sortedWeb = response.data.web.sort((a, b) => {
-            if (a.isPin && !b.isPin) return -1;
-            if (!a.isPin && b.isPin) return 1;
-            return 0;
-          });
-
-          // Add this function before renderPagination
-          function renderItem(element) {
-            return `
-            <div class="col-12 col-md-4" data-aos="fade-up" data-aos-duration="1000">
-              ${
-                element.link != null
-                  ? '<a target="_blank" href="' + element.link + '">'
-                  : ""
-              }
-                <div class="img-portfolio-section">
-                  <div class="category-label ${
-                    response.data.mobile.includes(element)
-                      ? "mobile-label"
-                      : "web-label"
-                  }">
-                    ${
-                      response.data.mobile.includes(element)
-                        ? "Mobile"
-                        : "Website"
-                    }
-                  </div>
-                  <img class="img-portfolio" src="${element.thumbnail}" />
-                </div>
-                <div>
-                  <h3 ${element.link != null ? 'class="text-white"' : ""}>${
-              element.title
-            }</h3>
-                  <div class="mb-2">
-                    ${element.logo
-                      .map(
-                        (e) =>
-                          `<img class="small-image" src="${e}" style="margin-left:0px !important;margin-right:10px" />`
-                      )
-                      .join("")}
-                  </div>
-                  <p class="text-grey">${element.desc}</p>
-                </div>
-              ${element.link != null ? "</a>" : ""}
-            </div>`;
-          }
-
-          function renderPagination(
-            totalItems,
-            currentPage,
-            containerId,
-            type
-          ) {
-            const totalPages = Math.ceil(totalItems.length / itemsPerPage);
-            const container = $(`#${containerId}`);
-            container.empty();
-
-            if (totalPages <= 1) return;
-
-            // Previous button
-            container.append(`
-    <li class="page-item ${currentPage === 1 ? "disabled" : ""}">
-      <a class="page-link" href="#" data-page="${
-        currentPage - 1
-      }" data-type="${type}">
-        <span aria-hidden="true">&laquo;</span>
-      </a>
-    </li>
-  `);
-
-            // First page
-            if (currentPage > 3) {
-              container.append(`
-      <li class="page-item">
-        <a class="page-link" href="#" data-page="1" data-type="${type}">1</a>
-      </li>
-    `);
-              if (currentPage > 4) {
-                container.append(`
-        <li class="page-item disabled">
-          <a class="page-link" href="#">...</a>
-        </li>
-      `);
-              }
-            }
-
-            // Page numbers
-            for (
-              let i = Math.max(1, currentPage - 2);
-              i <= Math.min(totalPages, currentPage + 2);
-              i++
-            ) {
-              container.append(`
-      <li class="page-item ${currentPage === i ? "active" : ""}">
-        <a class="page-link" href="#" data-page="${i}" data-type="${type}">${i}</a>
-      </li>
-    `);
-            }
-
-            // Last page
-            if (currentPage < totalPages - 2) {
-              if (currentPage < totalPages - 3) {
-                container.append(`
-        <li class="page-item disabled">
-          <a class="page-link" href="#">...</a>
-        </li>
-      `);
-              }
-              container.append(`
-      <li class="page-item">
-        <a class="page-link" href="#" data-page="${totalPages}" data-type="${type}">${totalPages}</a>
-      </li>
-    `);
-            }
-
-            // Next button
-            container.append(`
-    <li class="page-item ${currentPage === totalPages ? "disabled" : ""}">
-      <a class="page-link" href="#" data-page="${
-        currentPage + 1
-      }" data-type="${type}">
-        <span aria-hidden="true">&raquo;</span>
-      </a>
-    </li>
-  `);
-          }
-
-          function renderItems(items, container, page) {
-            const start = (page - 1) * itemsPerPage;
-            const paginatedItems = items.slice(start, start + itemsPerPage);
-
-            container.empty();
-            paginatedItems.forEach((element) => {
-              container.append(renderItem(element));
-            });
-          }
-
-          // Initial render
-          // ... existing code ...
-          // Initial render
-          renderItems(allItems, $("#all .all-data"), currentPage.all);
-          renderItems(
-            sortedMobile,
-            $("#mobile .mobile-data"),
-            currentPage.mobile
-          );
-          renderItems(
-            sortedWeb,
-            $("#website .website-data"),
-            currentPage.website
-          );
-          // ... existing code ...
-
-          renderPagination(allItems, currentPage.all, "pagination-all", "all");
-          renderPagination(
-            sortedMobile,
-            currentPage.mobile,
-            "pagination-mobile",
-            "mobile"
-          );
-          renderPagination(
-            sortedWeb,
-            currentPage.website,
-            "pagination-website",
-            "website"
-          );
-
-          // Handle pagination clicks
-          $(".pagination").on("click", ".page-link", function (e) {
-            e.preventDefault();
-            const page = parseInt($(this).data("page"));
-            const type = $(this).data("type");
-
-            // Add scroll to portfolio section
-            document
-              .getElementById("portfolios")
-              .scrollIntoView({ behavior: "smooth" });
-
-            if (isNaN(page) || page < 1) return;
-
-            // ... existing code ...
-            switch (type) {
-              case "all":
-                if (page <= Math.ceil(allItems.length / itemsPerPage)) {
-                  currentPage.all = page;
-                  // Fix the selector to target all-data class
-                  renderItems(allItems, $("#all .all-data"), currentPage.all);
-                  renderPagination(
-                    allItems,
-                    currentPage.all,
-                    "pagination-all",
-                    "all"
-                  );
-                }
-                break;
-              // ... existing code ...
-              case "mobile":
-                if (page <= Math.ceil(sortedMobile.length / itemsPerPage)) {
-                  currentPage.mobile = page;
-                  renderItems(
-                    sortedMobile,
-                    $("#mobile .mobile-data"),
-                    currentPage.mobile
-                  );
-                  renderPagination(
-                    sortedMobile,
-                    currentPage.mobile,
-                    "pagination-mobile",
-                    "mobile"
-                  );
-                }
-                break;
-              case "website":
-                if (page <= Math.ceil(sortedWeb.length / itemsPerPage)) {
-                  currentPage.website = page;
-                  renderItems(
-                    sortedWeb,
-                    $("#website .website-data"),
-                    currentPage.website
-                  );
-                  renderPagination(
-                    sortedWeb,
-                    currentPage.website,
-                    "pagination-website",
-                    "website"
-                  );
-                }
-                break;
-            }
-          });
-        },
-      });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
     <script>
-      AOS.init();
-    </script>
+    // ============================
+    // TYPING EFFECT
+    // ============================
+    (function() {
+      const words = [
+        'Full Stack Developer',
+        'Mobile App Developer',
+        'Flutter Enthusiast',
+        'UI/UX Lover'
+      ];
+      let wordIndex = 0;
+      let charIndex = 0;
+      let isDeleting = false;
+      const element = document.getElementById('typing-text');
 
-    <script>
-      let lastScroll = 0;
-      let scrollTimeout;
-      const navbar = document.getElementById("navbar");
+      function type() {
+        const current = words[wordIndex];
+        if (isDeleting) {
+          element.textContent = current.substring(0, charIndex - 1);
+          charIndex--;
+        } else {
+          element.textContent = current.substring(0, charIndex + 1);
+          charIndex++;
+        }
 
-      let isHoveringNavbar = false;
-
-      // Deteksi saat mouse masuk dan keluar dari navbar
-      navbar.addEventListener("mouseenter", () => {
-        isHoveringNavbar = true;
-      });
-
-      navbar.addEventListener("mouseleave", () => {
-        isHoveringNavbar = false;
-      });
-
-      window.addEventListener("scroll", () => {
-        if (isHoveringNavbar) {
-          // Jika sedang hover di navbar, jangan lakukan apapun
+        if (!isDeleting && charIndex === current.length) {
+          isDeleting = true;
+          setTimeout(type, 2000);
           return;
         }
-
-        const currentScroll = window.pageYOffset;
-
-        if (currentScroll > lastScroll && currentScroll > 100) {
-          // Scrolling down & past 100px
-          navbar.classList.add("nav-scrolled");
-        } else {
-          // Scrolling up
-          navbar.classList.remove("nav-scrolled");
+        if (isDeleting && charIndex === 0) {
+          isDeleting = false;
+          wordIndex = (wordIndex + 1) % words.length;
+          setTimeout(type, 500);
+          return;
         }
-
-        lastScroll = currentScroll;
-
-        // Clear the existing timeout
-        clearTimeout(scrollTimeout);
-
-        // Set new timeout
-        scrollTimeout = setTimeout(() => {
-          navbar.classList.remove("nav-scrolled");
-        }, 200);
-      });
+        setTimeout(type, isDeleting ? 40 : 80);
+      }
+      type();
+    })();
     </script>
 
     <script>
-      // Get all sections
-      const sections = document.querySelectorAll("section, .container[id]");
-      const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+    // ============================
+    // PORTFOLIO LOADER
+    // ============================
+    $.ajax({
+      type: "GET",
+      url: "./data/portfolio.json",
+      success: function (response) {
+        $(".count-all").append(`(${response.data.mobile.length + response.data.web.length})`);
+        $(".count-mobile").append(`(${response.data.mobile.length})`);
+        $(".count-website").append(`(${response.data.web.length})`);
 
-      window.addEventListener("scroll", () => {
-        let current = "";
-        const windowHeight = window.innerHeight;
-        const documentHeight = document.documentElement.scrollHeight;
-        const scrollPosition = window.scrollY;
+        const itemsPerPage = 6;
+        let currentPage = { all: 1, mobile: 1, website: 1 };
 
-        // Check if we're at the bottom of the page
-        if (scrollPosition + windowHeight >= documentHeight - 50) {
-          current = "contact-section";
-        } else {
-          sections.forEach((section) => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (window.pageYOffset >= sectionTop - 150) {
-              current = section.getAttribute("id");
-            }
-          });
+        const allItems = [...response.data.mobile, ...response.data.web].sort((a, b) => {
+          if (a.isPin && !b.isPin) return -1;
+          if (!a.isPin && b.isPin) return 1;
+          return 0;
+        });
+
+        const sortedMobile = response.data.mobile.sort((a, b) => {
+          if (a.isPin && !b.isPin) return -1;
+          if (!a.isPin && b.isPin) return 1;
+          return 0;
+        });
+
+        const sortedWeb = response.data.web.sort((a, b) => {
+          if (a.isPin && !b.isPin) return -1;
+          if (!a.isPin && b.isPin) return 1;
+          return 0;
+        });
+
+        function renderItem(element, isMobile) {
+          const label = isMobile ? 'Mobile' : 'Website';
+          const labelClass = isMobile ? 'mobile-label' : 'web-label';
+          return `
+            <div class="col-12 col-md-4" data-aos="fade-up" data-aos-duration="800">
+              <div class="portfolio-card">
+                ${element.link != null ? '<a target="_blank" href="' + element.link + '">' : ''}
+                  <div class="img-portfolio-section">
+                    <div class="category-label ${labelClass}">${label}</div>
+                    <img class="img-portfolio" src="${element.thumbnail}" alt="${element.title}" loading="lazy" />
+                    <div class="img-overlay">
+                      <div class="overlay-icon">
+                        <span class="material-symbols-outlined">open_in_new</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3>${element.title}</h3>
+                    <div class="tech-stack">
+                      ${element.logo.map(e => `<img class="small-image" src="${e}" style="margin:0;" />`).join('')}
+                    </div>
+                    <p class="text-grey">${element.desc}</p>
+                  </div>
+                ${element.link != null ? '</a>' : ''}
+              </div>
+            </div>`;
         }
 
-        navLinks.forEach((link) => {
-          link.classList.remove("active-section");
-          const href = link.getAttribute("href").substring(1);
-          if (href === current) {
-            link.classList.add("active-section");
+        function renderPagination(totalItems, curPage, containerId, type) {
+          const totalPages = Math.ceil(totalItems.length / itemsPerPage);
+          const container = $(`#${containerId}`);
+          container.empty();
+          if (totalPages <= 1) return;
+
+          container.append(`<li class="page-item ${curPage === 1 ? 'disabled' : ''}"><a class="page-link" href="#" data-page="${curPage - 1}" data-type="${type}"><span aria-hidden="true">&laquo;</span></a></li>`);
+
+          if (curPage > 3) {
+            container.append(`<li class="page-item"><a class="page-link" href="#" data-page="1" data-type="${type}">1</a></li>`);
+            if (curPage > 4) container.append(`<li class="page-item disabled"><a class="page-link" href="#">...</a></li>`);
+          }
+
+          for (let i = Math.max(1, curPage - 2); i <= Math.min(totalPages, curPage + 2); i++) {
+            container.append(`<li class="page-item ${curPage === i ? 'active' : ''}"><a class="page-link" href="#" data-page="${i}" data-type="${type}">${i}</a></li>`);
+          }
+
+          if (curPage < totalPages - 2) {
+            if (curPage < totalPages - 3) container.append(`<li class="page-item disabled"><a class="page-link" href="#">...</a></li>`);
+            container.append(`<li class="page-item"><a class="page-link" href="#" data-page="${totalPages}" data-type="${type}">${totalPages}</a></li>`);
+          }
+
+          container.append(`<li class="page-item ${curPage === totalPages ? 'disabled' : ''}"><a class="page-link" href="#" data-page="${curPage + 1}" data-type="${type}"><span aria-hidden="true">&raquo;</span></a></li>`);
+        }
+
+        function renderItems(items, container, page) {
+          const start = (page - 1) * itemsPerPage;
+          const paginatedItems = items.slice(start, start + itemsPerPage);
+          container.empty();
+          paginatedItems.forEach((element) => {
+            const isMobile = response.data.mobile.includes(element);
+            container.append(renderItem(element, isMobile));
+          });
+          // Re-init AOS for new items
+          AOS.refresh();
+        }
+
+        renderItems(allItems, $("#all .all-data"), currentPage.all);
+        renderItems(sortedMobile, $("#mobile .mobile-data"), currentPage.mobile);
+        renderItems(sortedWeb, $("#website .website-data"), currentPage.website);
+
+        renderPagination(allItems, currentPage.all, "pagination-all", "all");
+        renderPagination(sortedMobile, currentPage.mobile, "pagination-mobile", "mobile");
+        renderPagination(sortedWeb, currentPage.website, "pagination-website", "website");
+
+        $(".pagination").on("click", ".page-link", function (e) {
+          e.preventDefault();
+          const page = parseInt($(this).data("page"));
+          const type = $(this).data("type");
+          if (isNaN(page) || page < 1) return;
+          document.getElementById("portfolios").scrollIntoView({ behavior: "smooth" });
+
+          switch (type) {
+            case "all":
+              if (page <= Math.ceil(allItems.length / itemsPerPage)) {
+                currentPage.all = page;
+                renderItems(allItems, $("#all .all-data"), currentPage.all);
+                renderPagination(allItems, currentPage.all, "pagination-all", "all");
+              }
+              break;
+            case "mobile":
+              if (page <= Math.ceil(sortedMobile.length / itemsPerPage)) {
+                currentPage.mobile = page;
+                renderItems(sortedMobile, $("#mobile .mobile-data"), currentPage.mobile);
+                renderPagination(sortedMobile, currentPage.mobile, "pagination-mobile", "mobile");
+              }
+              break;
+            case "website":
+              if (page <= Math.ceil(sortedWeb.length / itemsPerPage)) {
+                currentPage.website = page;
+                renderItems(sortedWeb, $("#website .website-data"), currentPage.website);
+                renderPagination(sortedWeb, currentPage.website, "pagination-website", "website");
+              }
+              break;
           }
         });
-      });
+      },
+    });
     </script>
 
     <script>
-      const backToTopButton = document.querySelector(".back-to-top");
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100,
+    });
+    </script>
 
-      window.addEventListener("scroll", () => {
-        if (window.scrollY === 0) {
-          // Halaman di paling atas
-          backToTopButton.style.display = "none";
-        } else {
-          // Scroll ke bawah
-          backToTopButton.style.display = "flex"; // atau "block", sesuai kebutuhan desain
+    <script>
+    // ============================
+    // NAVBAR AUTO-HIDE + SCROLL
+    // ============================
+    let lastScroll = 0;
+    let scrollTimeout;
+    const navbar = document.getElementById("navbar");
+    let isHoveringNavbar = false;
+
+    navbar.addEventListener("mouseenter", () => { isHoveringNavbar = true; });
+    navbar.addEventListener("mouseleave", () => { isHoveringNavbar = false; });
+
+    window.addEventListener("scroll", () => {
+      if (isHoveringNavbar) return;
+      const currentScroll = window.pageYOffset;
+
+      // Add shadow on scroll
+      if (currentScroll > 50) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+
+      if (currentScroll > lastScroll && currentScroll > 100) {
+        navbar.classList.add("nav-scrolled");
+      } else {
+        navbar.classList.remove("nav-scrolled");
+      }
+      lastScroll = currentScroll;
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(() => {
+        navbar.classList.remove("nav-scrolled");
+      }, 200);
+    });
+    </script>
+
+    <script>
+    // ============================
+    // ACTIVE NAV LINK
+    // ============================
+    const sections = document.querySelectorAll("section[id]");
+    const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      const scrollY = window.pageYOffset;
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop - 120;
+        const sectionHeight = section.offsetHeight;
+        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+          current = section.getAttribute("id");
         }
       });
 
-      // Optional: Sembunyikan saat pertama load (jika page langsung dibuka di atas)
-      if (window.scrollY === 0) {
-        backToTopButton.style.display = "none";
-      }
-
-      const handleBackToTopVisibility = () => {
-        if (window.scrollY === 0) {
-          backToTopButton.classList.remove("show");
-        } else {
-          backToTopButton.classList.add("show");
+      navLinks.forEach((link) => {
+        link.classList.remove("active-section");
+        const href = link.getAttribute("href").substring(1);
+        if (href === current) {
+          link.classList.add("active-section");
         }
-      };
+      });
+    });
+    </script>
 
-      window.addEventListener("scroll", handleBackToTopVisibility);
+    <script>
+    // ============================
+    // BACK TO TOP
+    // ============================
+    const backToTopButton = document.querySelector(".back-to-top");
 
-      // Jalankan sekali saat page load
-      handleBackToTopVisibility();
+    window.addEventListener("scroll", () => {
+      if (window.scrollY === 0) {
+        backToTopButton.classList.remove("show");
+      } else {
+        backToTopButton.classList.add("show");
+      }
+    });
+
+    if (window.scrollY === 0) {
+      backToTopButton.classList.remove("show");
+    }
     </script>
   </body>
 </html>
