@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
@@ -31,11 +33,10 @@
   </head>
   <body>
 
-
     <!-- NAVBAR -->
     <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
       <div class="container">
-        <a class="navbar-brand" href="#">YAQIE</a>
+        <a class="navbar-brand" href="#home"><span class="brand-mark"></span>YAQIE</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -43,6 +44,9 @@
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link active-section" href="#home">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#portfolios">Portfolio</a>
@@ -54,6 +58,7 @@
               <a class="nav-link" href="#contact-section">Contact</a>
             </li>
           </ul>
+          <a href="#contact-section" class="nav-cta ms-lg-3">Hire Me</a>
         </div>
       </div>
     </nav>
@@ -64,12 +69,14 @@
         <div class="row align-items-center">
           <div class="col-12 col-lg-6 order-lg-2 text-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
             <div class="profile-wrapper">
+              <div class="profile-ring"></div>
               <img src="./assets/images/profile/profile3.png" class="profile-image" alt="Ahmad Yahya" />
             </div>
           </div>
           <div class="col-12 col-lg-6 order-lg-1 text-center text-lg-start" data-aos="fade-right" data-aos-duration="1000">
+            <span class="hero-badge"><span class="badge-dot"></span>Available for new projects</span>
             <span class="greeting-text">Hello, I'm</span>
-            <h1 class="hero-name">Ahmad Yahya</h1>
+            <h1 class="hero-name">Ahmad <span class="text-gradient">Yahya</span></h1>
             <div class="typing-container">
               <span class="typing-text" id="typing-text"></span>
             </div>
@@ -78,17 +85,23 @@
             </p>
             <!-- Skill Icons -->
             <div class="skill-icons text-center text-lg-start">
-              <div class="skill-icon-wrapper" data-aos="zoom-in" data-aos-delay="100"><img class="small-image" src="./assets/images/skill/Dart_logo.png" /></div>
-              <div class="skill-icon-wrapper" data-aos="zoom-in" data-aos-delay="200"><img class="small-image" src="./assets/images/skill/3030139.webp" /></div>
-              <div class="skill-icon-wrapper" data-aos="zoom-in" data-aos-delay="300"><img class="small-image" src="./assets/images/skill/meta-image.png" /></div>
-              <div class="skill-icon-wrapper" data-aos="zoom-in" data-aos-delay="400"><img class="small-image" src="./assets/images/skill/codeigniter-logo-png-transparent.png" /></div>
-              <div class="skill-icon-wrapper" data-aos="zoom-in" data-aos-delay="500"><img class="small-image" src="./assets/images/skill/1969px-Laravel.svg.png" /></div>
-              <div class="skill-icon-wrapper" data-aos="zoom-in" data-aos-delay="600"><img class="small-image" src="./assets/images/skill/nodejs-logo-FBE122E377-seeklogo.com.png" /></div>
-              <div class="skill-icon-wrapper" data-aos="zoom-in" data-aos-delay="700"><img class="small-image" src="./assets/images/skill/1611079.png" /></div>
+              <div class="skill-icon-wrapper" data-aos="zoom-in" data-aos-delay="100" title="Dart"><img class="small-image" src="./assets/images/skill/Dart_logo.png" /></div>
+              <div class="skill-icon-wrapper" data-aos="zoom-in" data-aos-delay="200" title="Flutter"><img class="small-image" src="./assets/images/skill/3030139.webp" /></div>
+              <div class="skill-icon-wrapper" data-aos="zoom-in" data-aos-delay="300" title="PHP"><img class="small-image" src="./assets/images/skill/meta-image.png" /></div>
+              <div class="skill-icon-wrapper" data-aos="zoom-in" data-aos-delay="400" title="CodeIgniter"><img class="small-image" src="./assets/images/skill/codeigniter-logo-png-transparent.png" /></div>
+              <div class="skill-icon-wrapper" data-aos="zoom-in" data-aos-delay="500" title="Laravel"><img class="small-image" src="./assets/images/skill/1969px-Laravel.svg.png" /></div>
+              <div class="skill-icon-wrapper" data-aos="zoom-in" data-aos-delay="600" title="Node.js"><img class="small-image" src="./assets/images/skill/nodejs-logo-FBE122E377-seeklogo.com.png" /></div>
+              <div class="skill-icon-wrapper" data-aos="zoom-in" data-aos-delay="700" title="MySQL"><img class="small-image" src="./assets/images/skill/1611079.png" /></div>
             </div>
             <div class="d-flex gap-3 justify-content-center justify-content-lg-start flex-wrap">
               <a href="#portfolios" class="btn btn-primary">SEE MY PORTFOLIO</a>
               <a href="#contact-section" class="btn btn-secondary">CONTACT ME</a>
+            </div>
+            <div class="hero-social">
+              <a href="https://github.com/yaqie" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/yaqie/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.instagram.com/yaqie_/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/@FlutterRun" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
             </div>
           </div>
         </div>
@@ -101,13 +114,80 @@
       </div>
     </section>
 
+    <!-- STATS SECTION -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid" data-aos="fade-up" data-aos-duration="800">
+          <div class="stat-item">
+            <div class="stat-number">22<span class="stat-plus">+</span></div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">11<span class="stat-plus">+</span></div>
+            <div class="stat-label">Mobile Applications</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">11<span class="stat-plus">+</span></div>
+            <div class="stat-label">Web Applications</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">6<span class="stat-plus">+</span></div>
+            <div class="stat-label">Video Tutorials</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <p class="section-subtitle">What I Do</p>
+          <h1>My <span class="text-gradient">Services</span></h1>
+          <div class="header-line"></div>
+          <p class="section-desc">
+            I help individuals and businesses turn ideas into polished, production-ready applications — from the first sketch to the final release.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card">
+              <div class="service-icon"><span class="material-symbols-outlined">smartphone</span></div>
+              <h3>Mobile App Development</h3>
+              <p>Cross-platform mobile applications built with Flutter &amp; Dart — fast, beautiful, and consistent across iOS and Android.</p>
+              <div class="service-tags"><span>Flutter</span><span>Dart</span><span>REST API</span></div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card">
+              <div class="service-icon"><span class="material-symbols-outlined">code</span></div>
+              <h3>Web Development</h3>
+              <p>Robust and scalable web applications, company profiles, and landing pages using modern frameworks and proven tooling.</p>
+              <div class="service-tags"><span>Laravel</span><span>PHP</span><span>Node.js</span><span>React</span></div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card">
+              <div class="service-icon"><span class="material-symbols-outlined">palette</span></div>
+              <h3>UI/UX &amp; Prototyping</h3>
+              <p>Clean, intuitive interfaces designed with the user in mind — from wireframes and prototypes to pixel-perfect screens.</p>
+              <div class="service-tags"><span>Wireframe</span><span>Prototyping</span><span>Design</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- PORTFOLIO SECTION -->
     <section id="portfolios">
       <div class="container">
         <div class="section-header" data-aos="fade-up">
           <p class="section-subtitle">My Works</p>
-          <h1>Portfolio</h1>
+          <h1>My <span class="text-gradient">Portfolio</span></h1>
           <div class="header-line"></div>
+          <p class="section-desc">
+            A selection of mobile apps and web applications I've built — for clients, teams, and personal projects.
+          </p>
         </div>
 
         <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
@@ -161,9 +241,12 @@
     <section id="videos" style="padding: 100px 0;">
       <div class="container">
         <div class="section-header" data-aos="fade-up">
-          <p class="section-subtitle">Tutorials & Demos</p>
-          <h1>My Videos</h1>
+          <p class="section-subtitle">Tutorials &amp; Demos</p>
+          <h1>My <span class="text-gradient">Videos</span></h1>
           <div class="header-line"></div>
+          <p class="section-desc">
+            Tutorials and demo videos from my YouTube channel — sharing what I learn building real applications.
+          </p>
         </div>
         <div class="row">
           <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
@@ -208,8 +291,11 @@
       <div class="container">
         <div class="section-header" data-aos="fade-up">
           <p class="section-subtitle">Get In Touch</p>
-          <h1>Contact</h1>
+          <h1>Let's <span class="text-gradient">Connect</span></h1>
           <div class="header-line"></div>
+          <p class="section-desc">
+            Have a project in mind or just want to say hi? I'd love to hear from you.
+          </p>
         </div>
         <div class="row justify-content-center" data-aos="fade-up">
           <div class="col-12 col-lg-10">
@@ -224,7 +310,7 @@
                 </div>
                 <div class="col-12 col-md-7 text-center text-md-start">
                   <div class="contact-info">
-                    <h3>If you are <span style="color:#ffaf29;">INTERESTED</span>, we can reach out by contacting me on</h3>
+                    <h3>If you are <span class="text-gradient">INTERESTED</span>, we can reach out by contacting me on</h3>
                     <a href="https://wa.me/62895357948031?text=Halo, saya ingin bekerjasama dengan anda." target="_blank" class="contact-wa-link">
                       <i class="fab fa-whatsapp"></i> Chat on WhatsApp
                     </a>
@@ -242,7 +328,8 @@
     <footer class="footer" id="footer">
       <div class="container">
         <div class="footer-content">
-          <div class="footer-copyright">&copy; 2023 yaqie.github.io</div>
+          <div class="footer-brand">YAQIE<span>Mobile &amp; Web Developer</span></div>
+          <div class="footer-copyright">&copy; <span id="year">2023</span> yaqie.github.io</div>
           <div class="footer-social">
             <a href="https://github.com/yaqie" target="_blank" title="GitHub"><img class="small-image" src="./assets/images/footer/1.png" /></a>
             <a href="https://www.instagram.com/yaqie_/" target="_blank" title="Instagram"><img class="small-image" src="./assets/images/footer/2.png" /></a>
@@ -539,6 +626,28 @@
     if (window.scrollY === 0) {
       backToTopButton.classList.remove("show");
     }
+    </script>
+
+    <script>
+    // ============================
+    // CLOSE MOBILE MENU ON LINK CLICK
+    // ============================
+    document.querySelectorAll("#navbarNav .nav-link, #navbarNav .nav-cta").forEach((link) => {
+      link.addEventListener("click", () => {
+        const collapse = document.getElementById("navbarNav");
+        if (collapse.classList.contains("show")) {
+          const instance = bootstrap.Collapse.getOrCreateInstance(collapse);
+          instance.hide();
+        }
+      });
+    });
+    </script>
+
+    <script>
+    // ============================
+    // DYNAMIC FOOTER YEAR
+    // ============================
+    document.getElementById("year").textContent = new Date().getFullYear();
     </script>
   </body>
 </html>
